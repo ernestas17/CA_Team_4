@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledButtton = styled.button`
+export const StyledButton = styled.button`
   background-color: ${(props) => (props.primary ? '#FF6433' : '#1E1B1B')};
   color: #ffffff;
   padding: 16px 40px;
@@ -14,8 +14,5 @@ export const StyledButtton = styled.button`
 
   display: flex;
   flex-direction: column;
-
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
 `;
