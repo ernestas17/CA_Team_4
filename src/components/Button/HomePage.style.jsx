@@ -12,7 +12,7 @@ export const HomeButtton = styled.button`
   line-height: 31.5px;
   margin: 10px;
 
-  dipslay: flex;
+  display: flex;
   flex-direction: column;
 
   &:hover {
