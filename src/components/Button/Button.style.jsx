@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HomeButtton = styled.button`
+export const StyledButtton = styled.button`
   background-color: ${(props) => (props.primary ? '#FF6433' : '#1E1B1B')};
   color: #ffffff;
   padding: 16px 40px;
