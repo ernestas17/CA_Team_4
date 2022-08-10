@@ -1,4 +1,4 @@
-Folder for app reusable components.
+Folder for app reusable components. 
 
 Component forlder tructure:
 -- components folder (Button)
