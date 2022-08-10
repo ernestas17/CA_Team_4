@@ -1,16 +1,16 @@
 import React from 'react';
-import { HomeButton } from './HomeButton.style';
+import { StyledButton } from './Button.style';
 
 const Button = (props) => {
   return (
-    <HomeButton
+    <StyledButton
       onClick={props.action}
       {...props}
       primary={props.primary}
       secondary={props.secondary}
     >
       {props.text}
-    </HomeButton>
+    </StyledButton>
   );
 };
 
