@@ -17,16 +17,24 @@ const FooterContacts = ({ heading, phoneNr, address, workingHours }) => {
           <StyledHeader>{heading}</StyledHeader>
           <StyledIconsUl>
             <li>
-              <i className='fa-brands fa-facebook'></i>
+              <a href='https://www.facebook.com/'>
+                <i className='fa-brands fa-facebook'></i>
+              </a>
             </li>
             <li>
-              <i className='fa-brands fa-twitter'></i>
+              <a href='https://twitter.com/'>
+                <i className='fa-brands fa-twitter'></i>
+              </a>
             </li>
             <li>
-              <i className='fa-brands fa-instagram'></i>
+              <a href='https://www.instagram.com/'>
+                <i className='fa-brands fa-instagram'></i>
+              </a>
             </li>
             <li>
-              <i className='fa-brands fa-linkedin'></i>
+              <a href='https://www.linkedin.com/'>
+                <i className='fa-brands fa-linkedin'></i>
+              </a>
             </li>
           </StyledIconsUl>
         </StyledContainer>

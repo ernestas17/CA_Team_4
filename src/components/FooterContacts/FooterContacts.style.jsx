@@ -53,6 +53,9 @@ export const StyledIconsUl = styled.ul`
   gap: 23.6px;
   list-style: none;
 
+  a {
+    color: inherit;
+  }
   i {
     font-size: 24px;
   }
