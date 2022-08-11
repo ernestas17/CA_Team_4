@@ -4,6 +4,7 @@ import {
   StyledUl,
   StyledWrapper,
 } from './Footer.style';
+
 import { Link } from 'react-router-dom';
 // <a> tags will be replaced by Link after Router is implemented
 
