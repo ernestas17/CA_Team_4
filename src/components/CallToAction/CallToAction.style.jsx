@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import firstImg from '../../assets/images/Image1.png';
-import secondImg from '../../assets/images/ovGrEUgrkyE.png';
+import firstImg from '../../assets/images/callToAction/cta-car1.jpg';
+import secondImg from '../../assets/images/callToAction/cta-car2.jpg';
 
 export const StyledCallToAction = styled.section`
   width: 100vw - (100vw - 100%);
@@ -73,7 +73,7 @@ export const StyledAbsoluteDiv = styled.div`
     top: 0;
     left: 35%;
     max-width: 729px;
-    height: calc(25.9vw);
+    height: calc(25.8vw);
   }
 
   h3 {

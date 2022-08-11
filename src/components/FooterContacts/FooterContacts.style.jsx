@@ -30,9 +30,11 @@ export const StyledWrapper = styled.div`
   max-width: 1280px;
   height: 100%;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 950px) {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 64px;
   }
 `;
 
@@ -51,6 +53,9 @@ export const StyledIconsUl = styled.ul`
   gap: 23.6px;
   list-style: none;
 
+  a {
+    color: inherit;
+  }
   i {
     font-size: 24px;
   }
