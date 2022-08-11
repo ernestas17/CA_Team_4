@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import firstImg from '../../assets/images/Image1.png';
-import secondImg from '../../assets/images/ovGrEUgrkyE.png';
+import firstImg from '../../assets/images/cta-car1.jpg';
+import secondImg from '../../assets/images/cta-car2.jpg';
 
 export const StyledCallToAction = styled.section`
   width: 100vw - (100vw - 100%);
