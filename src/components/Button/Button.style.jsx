@@ -10,7 +10,6 @@ export const StyledButton = styled.button`
   font-weight: 600;
   font-size: 18px;
   line-height: 31.5px;
-  margin: 10px;
 
   display: flex;
   flex-direction: column;
