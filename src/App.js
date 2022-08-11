@@ -7,6 +7,7 @@ import footerLogo from './assets/images/Logo.png';
 import FooterContacts from './components/FooterContacts';
 import Footer from './components/Footer';
 import CallToAction from './components/CallToAction';
+import Card from './components/Card';
 
 function App() {
   return (
