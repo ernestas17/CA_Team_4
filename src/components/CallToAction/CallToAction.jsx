@@ -18,7 +18,7 @@ const CallToAction = ({ heading, btnText }) => {
           </div>
         </StyledAbsoluteDiv>
       </StyledImgContainerOne>
-      <StyledImgContainerTwo></StyledImgContainerTwo>
+      <StyledImgContainerTwo />
     </StyledCallToAction>
   );
 };
