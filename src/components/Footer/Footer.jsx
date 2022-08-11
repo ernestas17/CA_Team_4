@@ -25,7 +25,7 @@ const Footer = ({ logo, name, navLinks }) => {
           </StyledUl>
         </nav>
         <StyledCopyrights>
-          @Copyright {name} {currentYear}
+          &copy; Copyright {name} {currentYear}
         </StyledCopyrights>
       </StyledWrapper>
     </StyledFooter>
