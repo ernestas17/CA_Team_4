@@ -9,12 +9,12 @@ import {
   StyledContact,
 } from './FooterContacts.style';
 
-const FooterContacts = ({ header, phoneNr, address, workingHours }) => {
+const FooterContacts = ({ heading, phoneNr, address, workingHours }) => {
   return (
     <StyledFooterContacts>
       <StyledWrapper>
         <StyledContainer>
-          <StyledHeader>{header}</StyledHeader>
+          <StyledHeader>{heading}</StyledHeader>
           <StyledIconsUl>
             <li>
               <i className='fa-brands fa-facebook'></i>
