@@ -6,6 +6,8 @@ export const StyledFooterContacts = styled.div`
   justify-content: center;
   border: 1px #1e1b1b solid;
   padding: 40px 10px;
+  max-width: 1920px;
+  margin: 0 auto;
 
   background-color: #1e1b1b;
   color: #fff;
@@ -53,10 +55,10 @@ export const StyledIconsUl = styled.ul`
   gap: 23.6px;
   list-style: none;
 
-  a {
+  & a {
     color: inherit;
   }
-  i {
+  & i {
     font-size: 24px;
   }
 `;

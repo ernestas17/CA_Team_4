@@ -5,8 +5,10 @@ export const StyledFooter = styled.footer`
   width: calc(100vw - (100vw - 100%));
   padding: 10px 0;
   background-color: #1e1b1b;
-  /* background-color: ${(props) => props.background}; */
   border: 1px #1e1b1b solid;
+
+  max-width: 1920px;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
@@ -50,10 +52,10 @@ export const StyledUl = styled.ul`
     gap: 40px;
   }
 
-  li {
+  & li {
     list-style: none;
 
-    a {
+    & a {
       text-decoration: none;
       color: #fff;
     }

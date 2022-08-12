@@ -76,7 +76,7 @@ export const StyledAbsoluteDiv = styled.div`
     height: calc(25.8vw);
   }
 
-  h3 {
+  & h3 {
     color: #fff;
     font-size: 36px;
     font-weight: 700;
