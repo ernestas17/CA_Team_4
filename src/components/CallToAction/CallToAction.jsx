@@ -1,4 +1,5 @@
 import Button from '../Button/Button';
+import TEXTS from '../../constants/texts';
 
 import {
   StyledCallToAction,
@@ -7,14 +8,14 @@ import {
   StyledAbsoluteDiv,
 } from './CallToAction.style';
 
-const CallToAction = ({ heading, btnText }) => {
+const CallToAction = () => {
   return (
     <StyledCallToAction>
       <StyledImgContainerOne>
         <StyledAbsoluteDiv>
           <div>
-            <h3>{heading}</h3>
-            <Button text={btnText} />
+            <h3>{TEXTS.callToAction.heading}</h3>
+            <Button text={TEXTS.callToAction.button} />
           </div>
         </StyledAbsoluteDiv>
       </StyledImgContainerOne>

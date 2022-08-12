@@ -8,9 +8,14 @@ const TEXTS = {
       hours: '24',
       hoursSh: 'hr',
       service: 'Quick service',
-      rating: 'Rating',
+      rating: {
+        number: '4.5/5',
+        text: 'Rating',
+      },
     },
-    sectionTWo: {},
+    sectionTwo: {
+      heading1: 'We are taking car servicing seriously',
+    },
   },
   callToAction: {
     heading: 'Get in touch with us for your service related query',
@@ -18,9 +23,19 @@ const TEXTS = {
   },
   footerContacts: {
     heading: 'Get in touch with us for your service',
-    phoneNr: '1800 2665 24 52',
-    address: 'NH 234 Public Square San Francisco 65368',
-    workingHours: 'Monday to Friday 9:00 AM to 10:00 AM',
+    phone: {
+      title: 'Help line Number',
+      phoneNr: '1800 2665 24 52',
+    },
+
+    address: {
+      title: 'Address',
+      address: 'NH 234 Public Square San Francisco 65368',
+    },
+    workingHours: {
+      title: 'We are open',
+      workingHours: 'Monday to Friday 9:00 AM to 10:00 AM',
+    },
   },
   footer: {
     name: 'Finsweet',
