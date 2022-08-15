@@ -38,6 +38,10 @@ export const StyledWrapper = styled.div`
     align-items: flex-start;
     padding: 0 64px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
 `;
 
 export const StyledContainer = styled.div`
