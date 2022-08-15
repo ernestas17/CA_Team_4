@@ -73,7 +73,7 @@ export const StyledAbsoluteDiv = styled.div`
     top: 0;
     left: 35%;
     max-width: 729px;
-    height: calc(25.8vw);
+    height: calc(25.9vw);
   }
 
   & h3 {
