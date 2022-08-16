@@ -1,3 +1,5 @@
+import TEXTS from '../../constants/texts';
+
 import {
   StyledFooterContacts,
   StyledWrapper,
@@ -9,12 +11,12 @@ import {
   StyledContact,
 } from './FooterContacts.style';
 
-const FooterContacts = ({ heading, phoneNr, address, workingHours }) => {
+const FooterContacts = () => {
   return (
     <StyledFooterContacts>
       <StyledWrapper>
         <StyledContainer>
-          <StyledHeader>{heading}</StyledHeader>
+          <StyledHeader>{TEXTS.footerContacts.heading}</StyledHeader>
           <StyledIconsUl>
             <li>
               <a href='https://www.facebook.com/'>
@@ -40,16 +42,24 @@ const FooterContacts = ({ heading, phoneNr, address, workingHours }) => {
         </StyledContainer>
         <StyledContainer>
           <StyledContactBox>
-            <StyledContactType>Help line Number</StyledContactType>
-            <StyledContact>{phoneNr}</StyledContact>
+            <StyledContactType>
+              {TEXTS.footerContacts.phone.title}
+            </StyledContactType>
+            <StyledContact>{TEXTS.footerContacts.phone.phoneNr}</StyledContact>
           </StyledContactBox>
           <StyledContactBox>
-            <StyledContactType>Address</StyledContactType>
-            <StyledContact>{address}</StyledContact>
+            <StyledContactType>
+              {TEXTS.footerContacts.address.title}
+            </StyledContactType>
+            <StyledContact>{TEXTS.footerContacts.address.title}</StyledContact>
           </StyledContactBox>
           <StyledContactBox>
-            <StyledContactType>We are open</StyledContactType>
-            <StyledContact>{workingHours}</StyledContact>
+            <StyledContactType>
+              {TEXTS.footerContacts.workingHours.title}
+            </StyledContactType>
+            <StyledContact>
+              {TEXTS.footerContacts.workingHours.workingHours}
+            </StyledContact>
           </StyledContactBox>
         </StyledContainer>
       </StyledWrapper>

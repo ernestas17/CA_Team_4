@@ -1,54 +1,23 @@
-import Button from '../../components/Button/Button';
-import clockSvg from '../../assets/icons/clock.svg';
+import CallToAction from '../../components/CallToAction';
+import HeroSection from './components/HeroSection';
+import ServicesSection from './components/ServicesSection/ServicesSection';
+import ProcessSection from './components/processSection/ProcessSection';
+import ExperienceSection from './components/ExperienceSection/ExperienceSection';
+import BrandsSection from './components/BrandsSection';
+import ReviewsSection from './components/ReviewsSecton';
 
-import {
-  StyledHomePage,
-  StyledSectionOne,
-  StyledContainerOne,
-  StyledContainerTwo,
-  StyledImageContainer,
-  StyledOpenHContainer,
-  StyledTitle,
-  StyledOpenHours,
-  StyledStickerBorder,
-  StyledStickerTop,
-} from './HomePage.style';
+import { StyledHomePage } from './HomePage.style';
 
-const HomePage = ({
-  heading,
-  btnText,
-  title,
-  workingHours,
-  hours,
-  hoursSh,
-  service,
-  rating,
-}) => {
+const HomePage = () => {
   return (
     <StyledHomePage>
-      <StyledSectionOne>
-        <StyledContainerOne>
-          <div>
-            <h1>{heading}</h1>
-            <Button primary text={btnText} />
-          </div>
-          <StyledOpenHContainer>
-            <img src={clockSvg} alt='clockImg' />
-            <div>
-              <StyledTitle>{title}</StyledTitle>
-              <StyledOpenHours>{workingHours}</StyledOpenHours>
-            </div>
-          </StyledOpenHContainer>
-        </StyledContainerOne>
-        <StyledContainerTwo>
-          <StyledImageContainer />
-          <StyledStickerBorder>
-            <StyledStickerTop></StyledStickerTop>
-          </StyledStickerBorder>
-
-          <div></div>
-        </StyledContainerTwo>
-      </StyledSectionOne>
+      <HeroSection />
+      <ServicesSection />
+      <ProcessSection />
+      <CallToAction />
+      <ExperienceSection />
+      <BrandsSection />
+      <ReviewsSection />
     </StyledHomePage>
   );
 };
