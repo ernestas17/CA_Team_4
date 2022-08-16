@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import serviceImg from '../../../../assets/images/homePage/home-s1-img.jpg';
+import serviceImg from '../../../../assets/images/homePage/heroSection/home-s1-img.jpg';
 
 export const StyledHeroSection = styled.section`
   display: flex;
