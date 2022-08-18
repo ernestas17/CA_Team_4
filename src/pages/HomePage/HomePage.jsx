@@ -1,4 +1,5 @@
 import CallToAction from '../../components/CallToAction';
+import FooterContacts from '../../components/FooterContacts';
 import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection/ServicesSection';
 import ProcessSection from './components/processSection/ProcessSection';
@@ -18,6 +19,7 @@ const HomePage = () => {
       <ExperienceSection />
       <BrandsSection />
       <ReviewsSection />
+      <FooterContacts />
     </StyledHomePage>
   );
 };
