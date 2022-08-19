@@ -13,3 +13,4 @@ const Card = ({ icon, text }, props) => {
 };
 
 export default Card;
+
