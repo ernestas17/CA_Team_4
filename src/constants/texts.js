@@ -62,7 +62,21 @@ const TEXTS = {
         title: 'Get your Service Done',
         text: 'Through True Rich Attended does no end it his mother since real had half every.',
       },
-      cardsSection: {},
+    },
+    cardsSection: {
+      subHeading: 'What we Offer',
+      heading: 'We offer full service auto repair & maintenance',
+      cards: {
+        card1: 'Diagnostics',
+        card2: 'Engine Repair',
+        card3: 'Wheel Repair',
+        card4: 'Oil Filter',
+        card5: 'Body Work',
+        card6: 'Batteries',
+        card7: 'Insurance Claim',
+        card8: 'Custom Service',
+      },
+      button: 'Learn about services',
     },
     experienceSection: {
       experience1: {

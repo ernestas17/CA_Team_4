@@ -1,4 +1,6 @@
 import TEXTS from '../../../../constants/texts';
+import { Link } from 'react-router-dom';
+import NAV_LINKS from '../../../../constants/navLinks';
 import wrenchIcon from '../../../../assets/icons/homePage/servicesSection/wrench.svg';
 import mechanicIcon from '../../../../assets/icons/homePage/servicesSection/mechanic.svg';
 import dollarIcon from '../../../../assets/icons/homePage/servicesSection/dollar.svg';
@@ -47,9 +49,9 @@ const ServicesSection = () => {
           </StyledServiceTxtWrapper>
         </StyledServiceWrapper>
         <StyledLink>
-          <a href={TEXTS.homePage.servicesSection.services.button.link}>
+          <Link to={NAV_LINKS[1].link}>
             {TEXTS.homePage.servicesSection.services.button.text}
-          </a>
+          </Link>
           <img src={arrowIcon} alt='arrow' />
         </StyledLink>
       </StyledContainerL>
