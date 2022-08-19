@@ -50,11 +50,11 @@ const ReviewsSection = () => {
           </ul>
           <StyledBtnsWrapper>
             <SliderBtn
-              icon={<i class='fa-solid fa-arrow-left-long'></i>}
+              icon={<i className='fa-solid fa-arrow-left-long'></i>}
               action={null}
             />
             <SliderBtn
-              icon={<i class='fa-solid fa-arrow-right-long'></i>}
+              icon={<i className='fa-solid fa-arrow-right-long'></i>}
               action={null}
             />
           </StyledBtnsWrapper>
