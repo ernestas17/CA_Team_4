@@ -8,7 +8,6 @@ import {
 } from './Footer.style';
 
 import { Link } from 'react-router-dom';
-// <a> tags will be replaced by Link after Router is implemented
 
 const Footer = ({ logo, navLinks }) => {
   const currentYear = new Date().getFullYear();
@@ -22,7 +21,7 @@ const Footer = ({ logo, navLinks }) => {
           <StyledUl>
             {navLinks.map((page) => (
               <li key={page.name}>
-                <a href={page.link}>{page.name}</a>
+                <Link to={page.link}>{page.name}</Link>
               </li>
             ))}
           </StyledUl>
