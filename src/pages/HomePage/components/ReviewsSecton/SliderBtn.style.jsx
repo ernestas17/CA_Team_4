@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledSliderBtn = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   border: none;

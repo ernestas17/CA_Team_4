@@ -112,11 +112,42 @@ const TEXTS = {
         text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
       },
     },
+    faqSection: {
+      heading: 'Frequently Asked Questions',
+      accordionData: [
+        {
+          title: 'How long should a car repair take?',
+          content:
+            'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at Finsweet',
+        },
+        {
+          title: "How do I schedule my car's appointment?",
+          content:
+            'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at Finsweet',
+        },
+        {
+          title: 'What are the repair services provided?',
+          content:
+            'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at Finsweet',
+        },
+        {
+          title: 'How do I find auto body shops near me?',
+          content:
+            'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at Finsweet',
+        },
+        {
+          title: 'Genuine spare parts during car repair?',
+          content:
+            'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car I have got my car repaired at Finsweet I have got my car repaired at Finsweet',
+        },
+      ],
+    },
   },
   callToAction: {
     heading: 'Get in touch with us for your service related query',
     button: 'Contact Us',
   },
+
   footerContacts: {
     heading: 'Get in touch with us for your service',
     phone: {
