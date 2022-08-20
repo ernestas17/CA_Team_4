@@ -1,4 +1,8 @@
 const TEXTS = {
+  header: {
+    title: 'Road Assistance',
+    number: '1800 265 24 52',
+  },
   homePage: {
     sectionOne: {
       heading: 'Get your vehicle sevice done online at one place',
