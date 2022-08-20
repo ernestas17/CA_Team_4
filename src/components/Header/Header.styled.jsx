@@ -40,6 +40,7 @@ export const StyledHeader = styled.header`
     & ul {
       display: flex;
       align-items: center;
+
       flex-direction: column;
       margin-top: 20px;
 
@@ -54,13 +55,10 @@ export const StyledHeader = styled.header`
 
         &:last-child {
           margin-bottom: 16px;
-
-          @media screen and (min-width: 950px) {
-            margin-bottom: 0px;
-          }
         }
 
         @media screen and (min-width: 950px) {
+          margin-bottom: 0px;
           &:not(:nth-child(5)) {
             margin-right: 40px;
           }
