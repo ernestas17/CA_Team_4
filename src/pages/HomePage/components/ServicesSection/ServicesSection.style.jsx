@@ -45,10 +45,7 @@ export const StyledContainerL = styled.div`
   }
 
   & a {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1e1b1b;
-    text-decoration: none;
+    margin-left: 63px;
   }
 `;
 
@@ -90,13 +87,6 @@ export const StyledServiceTxtWrapper = styled.div`
     opacity: 0.6;
     max-width: 322px;
   }
-`;
-
-export const StyledLink = styled.div`
-  display: flex;
-  align-items: baseline;
-  gap: 21px;
-  padding-left: 63px;
 `;
 
 // Right container
