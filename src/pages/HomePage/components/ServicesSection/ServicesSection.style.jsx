@@ -45,10 +45,7 @@ export const StyledContainerL = styled.div`
   }
 
   & a {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1e1b1b;
-    text-decoration: none;
+    margin-left: 63px;
   }
 `;
 

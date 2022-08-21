@@ -1,10 +1,9 @@
 import TEXTS from '../../../../constants/texts';
-import { Link } from 'react-router-dom';
 import NAV_LINKS from '../../../../constants/navLinks';
 import wrenchIcon from '../../../../assets/icons/homePage/servicesSection/wrench.svg';
 import mechanicIcon from '../../../../assets/icons/homePage/servicesSection/mechanic.svg';
 import dollarIcon from '../../../../assets/icons/homePage/servicesSection/dollar.svg';
-import arrowIcon from '../../../../assets/icons/homePage/servicesSection/Arrow.svg';
+import ArrowLink from '../../../../components/ArrowLink/ArrowLink';
 import Button from '../../../../components/Button/Button';
 import {
   StyledServicesSection,
@@ -13,7 +12,6 @@ import {
   StyledIconCircle,
   StyledContainerR,
   StyledServiceTxtWrapper,
-  StyledLink,
 } from './ServicesSection.style';
 
 const ServicesSection = () => {
@@ -48,12 +46,10 @@ const ServicesSection = () => {
             <p>{TEXTS.homePage.servicesSection.services.service1.text}</p>
           </StyledServiceTxtWrapper>
         </StyledServiceWrapper>
-        <StyledLink>
-          <Link to={NAV_LINKS[1].link}>
-            {TEXTS.homePage.servicesSection.services.button.text}
-          </Link>
-          <img src={arrowIcon} alt='arrow' />
-        </StyledLink>
+        <ArrowLink
+          link={NAV_LINKS[1].link}
+          text={TEXTS.homePage.servicesSection.services.button.text}
+        />
       </StyledContainerL>
       <StyledContainerR>
         <h3>{TEXTS.homePage.servicesSection.form.title}</h3>
