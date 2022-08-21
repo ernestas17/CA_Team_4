@@ -6,12 +6,10 @@ import TeamSection from './components/TeamSection/TeamSection';
 import { StyledAboutUsPage } from './AboutUsPage.style';
 import ObjectivesSection from './components/ObjectivesSection/ObjectivesSection';
 import CustomerJourneySection from './components/CustomerJourneySection/CustomerJourneySection';
-import HeroElementSection from './components/HeroElementSection/HeroElementSection';
 
 const AboutUsPage = () => {
   return (
     <StyledAboutUsPage>
-      <HeroElementSection />
       <CustomerJourneySection />
       <ObjectivesSection />
       <ServiceAndExperienceSection />
