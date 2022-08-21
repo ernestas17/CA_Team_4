@@ -99,6 +99,73 @@ const TEXTS = {
       },
     },
   },
+  aboutUsPage: {
+    heroElementSection: {
+      title: 'About us',
+      text: 'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does  ',
+      btnTxt: 'Book a service',
+    },
+    objectives: {
+      titles: {
+        titleFirst:
+          'Serve our customers and always deliver the customer service',
+        titleSecond:
+          'To be the world’s most eader in automotive business solutions.',
+        titleThird:
+          'We value the service we provide and our loyal returning customers ',
+      },
+      description:
+        'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes ',
+    },
+    teamHeader: {
+      heading: 'Meet our Team',
+    },
+    team: {
+      memberOne: {
+        name: 'Javena Melo',
+        position: 'Founder, Director',
+      },
+      memberTwo: {
+        name: 'Paul Honson',
+        position: 'Head Technician',
+      },
+      memberThree: {
+        name: 'Devon Lane',
+        position: 'Technician',
+      },
+      memberFour: {
+        name: 'Jalen Davies',
+        position: 'Marketing Manager',
+      },
+      memberFive: {
+        name: 'Kylee Danford',
+        position: 'Sales Manager',
+      },
+      memberSix: {
+        name: 'Luisa Wilson',
+        position: 'Support Assistant',
+      },
+    },
+
+    service: {
+      header: 'Services we provide to our valued customers',
+      convenient: {
+        title: 'Convenient Service',
+        description:
+          'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
+      },
+      expert: {
+        title: 'Expert Mechanics',
+        description:
+          'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
+      },
+      transparent: {
+        title: 'Transparent Pricing',
+        description:
+          'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
+      },
+    },
+  },
   callToAction: {
     heading: 'Get in touch with us for your service related query',
     button: 'Contact Us',
