@@ -4,7 +4,6 @@ export const StyledArrowLink = styled.div`
   display: flex;
   align-items: center;
   gap: 21px;
-  padding-left: 63px;
 
   a {
     font-weight: 600;
