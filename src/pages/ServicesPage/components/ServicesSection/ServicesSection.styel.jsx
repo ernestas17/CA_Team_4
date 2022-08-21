@@ -12,6 +12,7 @@ export const StyledServicesSection = styled.section`
   @media screen and (min-width: 1400px) {
     flex-direction: row;
     justify-content: center;
+    padding: 128px 0;
   }
 `;
 

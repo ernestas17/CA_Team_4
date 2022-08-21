@@ -168,6 +168,22 @@ const TEXTS = {
         'AC Repair',
       ],
     },
+    processSection: {
+      card1: {
+        title: 'How we work and the process we follow',
+        texts: [
+          'Through True Rich Attended does no end it his mother since',
+          'Attended does no end it his mother since real had half every',
+          'Since real had half every him case in packages enquire we up ecstatic',
+        ],
+      },
+      card2: {
+        title: "Diagnose Car Problems If You Don't Know Much About Cars",
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes everything from struts, shocks, and tie rod ends to ball joints, springs everything from struts, shocks, and tie rod ends to ball joints, springs',
+        btnTxt: 'Book a service',
+      },
+    },
   },
   callToAction: {
     heading: 'Get in touch with us for your service related query',
