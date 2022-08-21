@@ -1,11 +1,10 @@
 import Card from '../../../../components/Card';
-import { Link } from 'react-router-dom';
+import ArrowLink from '../../../../components/ArrowLink/ArrowLink';
 import NAV_LINKS from '../../../../constants/navLinks';
 import {
   StyledCardsSection,
   StyledCardsContainer,
   StyledLinkWrapper,
-  StyledLink,
 } from './CardsSection.style';
 // Icons
 import carDiagnosticIcon from '../../../../assets/icons/homePage/CardsSection/CarDiagnostic.svg';
@@ -16,7 +15,6 @@ import bodyWorkIcon from '../../../../assets/icons/homePage/CardsSection/bodyWor
 import bateryIcon from '../../../../assets/icons/homePage/CardsSection/batery.svg';
 import insuranceIcon from '../../../../assets/icons/homePage/CardsSection/insurance.svg';
 import wrenchIcon from '../../../../assets/icons/homePage/CardsSection/wrench.svg';
-import arrowIcon from '../../../../assets/icons/homePage/servicesSection/Arrow.svg';
 
 import TEXTS from '../../../../constants/texts';
 
@@ -54,12 +52,10 @@ const CardsSection = () => {
         />
       </StyledCardsContainer>
       <StyledLinkWrapper>
-        <StyledLink>
-          <Link to={NAV_LINKS[2].link}>
-            {TEXTS.homePage.cardsSection.button}
-          </Link>
-          <img src={arrowIcon} onClick={() => {}} alt='arrow' />
-        </StyledLink>
+        <ArrowLink
+          link={NAV_LINKS[2].link}
+          text={TEXTS.homePage.cardsSection.button}
+        />
       </StyledLinkWrapper>
     </StyledCardsSection>
   );
