@@ -147,6 +147,28 @@ const TEXTS = {
       ],
     },
   },
+  servicesPage: {
+    bookingSection: {
+      title: 'Our services',
+      content:
+        'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw Through True Rich Attended does',
+      btnTxt: 'Book a service',
+    },
+    servicesSection: {
+      title: 'Auto Diagnostics',
+      content:
+        'Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic. Through True Rich Attended does no end it his mother. ',
+      btnTxt: 'See service details',
+      cards: [
+        'Auto Dignostics',
+        'Engin Repair',
+        'Body Work',
+        'Batteries',
+        'Car wash',
+        'AC Repair',
+      ],
+    },
+  },
   callToAction: {
     heading: 'Get in touch with us for your service related query',
     button: 'Contact Us',

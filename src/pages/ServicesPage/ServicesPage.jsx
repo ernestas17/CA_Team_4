@@ -1,7 +1,18 @@
-import React from 'react';
+import { StyledServicesPage } from './ServicesPage.style';
+import CallToAction from '../../components/CallToAction';
+import FooterContacts from '../../components/FooterContacts';
+import BookingSection from './components/BookingSection/BookingSection';
+import ServicesSection from './components/ServicesSection/ServicesSection';
 
 const ServicesPage = () => {
-  return <h2>ServicesPage</h2>;
+  return (
+    <StyledServicesPage>
+      <BookingSection />
+      <ServicesSection />
+      <CallToAction />
+      <FooterContacts />
+    </StyledServicesPage>
+  );
 };
 
 export default ServicesPage;
