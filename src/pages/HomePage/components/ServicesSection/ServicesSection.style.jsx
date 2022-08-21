@@ -92,13 +92,6 @@ export const StyledServiceTxtWrapper = styled.div`
   }
 `;
 
-export const StyledLink = styled.div`
-  display: flex;
-  align-items: baseline;
-  gap: 21px;
-  padding-left: 63px;
-`;
-
 // Right container
 
 export const StyledContainerR = styled.div`

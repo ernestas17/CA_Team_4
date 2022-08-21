@@ -35,6 +35,7 @@ export const StyledCardsContainer = styled.div`
   display: grid;
   gap: 8px;
   grid-template-columns: 1fr;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 820px) {
     grid-template-columns: 1fr 1fr;
