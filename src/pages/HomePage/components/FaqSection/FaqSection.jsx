@@ -9,7 +9,7 @@ const FaqSection = () => {
     <StyledFaqSection>
       <h3>{TEXTS.homePage.faqSection.heading}</h3>
       {accordionData.map(({ title, content }) => (
-        <Accordion title={title} content={content} />
+        <Accordion key={title} title={title} content={content} />
       ))}
     </StyledFaqSection>
   );
