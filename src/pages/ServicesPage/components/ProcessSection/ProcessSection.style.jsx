@@ -55,13 +55,17 @@ export const StyledCardTop = styled.div`
       width: 100%;
 
       & p {
-        width: 100%;
+        width: 80%;
         max-width: 443px;
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
         letter-spacing: -0.03em;
         color: #1e1b1b;
+
+        @media screen and (min-width: 820px) {
+          width: 100%;
+        }
       }
     }
   }
