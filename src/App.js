@@ -11,6 +11,7 @@ import { Routes, Route } from 'react-router-dom';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const SingleServicePage = lazy(() => import('./pages/SingleServicePage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 // Component imports
@@ -25,6 +26,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutUsPage />} />
         <Route path='/services' element={<ServicesPage />} />
+        <Route path='/services/service' element={<SingleServicePage />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/contact' element={<ContactPage />} />
       </Routes>
