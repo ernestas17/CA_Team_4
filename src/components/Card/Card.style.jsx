@@ -31,4 +31,3 @@ export const StyledCardText = styled.p`
   letter-spacing: -0.03em;
   margin-top: 16px;
 `;
-

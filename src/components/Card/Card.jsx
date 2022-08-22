@@ -1,11 +1,11 @@
 import { StyledCard, StyledCardText } from './Card.style';
 
-const Card = ({ icon, text }, props) => {
+const Card = ({ icon, text, customWidth, customHeight }) => {
   return (
     <StyledCard
       icon={icon}
-      customWidth={props.customWidth}
-      customHeight={props.customHeight}>
+      customWidth={customWidth}
+      customHeight={customHeight}>
       <img src={icon} alt='icon' />
       <StyledCardText>{text}</StyledCardText>
     </StyledCard>
@@ -13,4 +13,3 @@ const Card = ({ icon, text }, props) => {
 };
 
 export default Card;
-
