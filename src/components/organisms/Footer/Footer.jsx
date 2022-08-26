@@ -1,34 +1,26 @@
 import TEXTS from '../../../constants/texts';
-
-import {
-  StyledFooter,
-  StyledCopyrights,
-  StyledUl,
-  StyledWrapper,
-} from './Footer.style';
-
 import { Link } from 'react-router-dom';
+import { LogoIcon } from '../../../assets/icons';
+import { StyledFooter, StyledWrapper } from './Footer.style';
 
-const Footer = ({ logo, navLinks }) => {
+const Footer = ({ navLinks }) => {
   const currentYear = new Date().getFullYear();
   return (
     <StyledFooter>
       <StyledWrapper>
-        <a href='/'>
-          <img src={logo} alt='Logo' />
-        </a>
+        <LogoIcon />
         <nav>
-          <StyledUl>
+          <ul>
             {navLinks.map((page) => (
               <li key={page.name}>
                 <Link to={page.link}>{page.name}</Link>
               </li>
             ))}
-          </StyledUl>
+          </ul>
         </nav>
-        <StyledCopyrights>
+        <p>
           &copy; {TEXTS.footer.copyR} {TEXTS.footer.name} {currentYear}
-        </StyledCopyrights>
+        </p>
       </StyledWrapper>
     </StyledFooter>
   );
