@@ -5,7 +5,7 @@ import golf from '../../../../assets/images/servicesPage/processSection/Golf.jpg
 import hyunai from '../../../../assets/images/servicesPage/processSection/Hyundai.jpg';
 import tires from '../../../../assets/images/servicesPage/processSection/Tires.jpg';
 import nissan from '../../../../assets/images/servicesPage/processSection/Nissan.jpg';
-import Button from '../../../../components/Button/Button';
+import Button from '../../../../components/atoms/Button/Button';
 import {
   StyledProcessSection,
   StyledTopPart,

@@ -1,5 +1,5 @@
 import TEXTS from '../../../../constants/texts';
-import Button from '../../../../components/Button/Button';
+import Button from '../../../../components/atoms/Button/Button';
 import line from '../../../../assets/icons/homePage/processSection/Line.svg';
 import {
   StyledProcessSection,

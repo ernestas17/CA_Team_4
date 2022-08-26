@@ -15,8 +15,8 @@ const SingleServicePage = lazy(() => import('./pages/SingleServicePage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 // Component imports
-const Header = lazy(() => import('./components/Header'));
-const Footer = lazy(() => import('./components/Footer'));
+const Header = lazy(() => import('./components/organisms/Header'));
+const Footer = lazy(() => import('./components/organisms/Footer'));
 
 function App() {
   return (

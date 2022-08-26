@@ -1,4 +1,4 @@
-import Button from '../../../../components/Button/Button';
+import Button from '../../../../components/atoms/Button/Button';
 import clockSvg from '../../../../assets/icons/homePage/heroSection/clock.svg';
 import star from '../../../../assets/icons/homePage/heroSection/Star 1.svg';
 import TEXTS from '../../../../constants/texts';

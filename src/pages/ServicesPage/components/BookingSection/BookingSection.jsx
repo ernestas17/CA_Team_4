@@ -1,6 +1,6 @@
 import TEXTS from '../../../../constants/texts';
 import ferrariImg from '../../../../assets/images/servicesPage/bookingSection/Ferrari.jpg';
-import ImgAndCard from '../../../../components/ImgAndCard/ImgAndCard';
+import ImgAndCard from '../../../../components/organisms/ImgAndCard/ImgAndCard';
 import { StyledBookingSection } from './BookingSection.style';
 
 const BookingSection = () => {

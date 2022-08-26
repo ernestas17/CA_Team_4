@@ -1,4 +1,4 @@
-import TEXTS from '../../constants/texts';
+import TEXTS from '../../../constants/texts';
 
 import {
   StyledFooter,
@@ -27,7 +27,7 @@ const Footer = ({ logo, navLinks }) => {
           </StyledUl>
         </nav>
         <StyledCopyrights>
-          &copy; Copyright {TEXTS.footer.name} {currentYear}
+          &copy; {TEXTS.footer.copyR} {TEXTS.footer.name} {currentYear}
         </StyledCopyrights>
       </StyledWrapper>
     </StyledFooter>

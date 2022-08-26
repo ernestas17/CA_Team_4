@@ -1,4 +1,4 @@
-import Button from '../../components/Button/Button';
+import Button from '../../atoms/Button/Button';
 import { StyledImgAndCard, StyledImg, StyledTextBox } from './ImgAndCard.style';
 
 const ImgAndCard = ({ img, title, text, btnTxt }) => {

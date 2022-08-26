@@ -1,4 +1,4 @@
-import TEXTS from '../../constants/texts';
+import TEXTS from '../../../constants/texts';
 
 import {
   StyledFooterContacts,

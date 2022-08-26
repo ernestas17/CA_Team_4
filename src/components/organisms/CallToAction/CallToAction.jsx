@@ -1,5 +1,5 @@
-import Button from '../Button/Button';
-import TEXTS from '../../constants/texts';
+import Button from '../../atoms/Button/Button';
+import TEXTS from '../../../constants/texts';
 
 import {
   StyledCallToAction,

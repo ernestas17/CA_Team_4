@@ -1,9 +1,9 @@
 // Router
 import { Link } from 'react-router-dom';
-import TEXTS from '../../constants/texts';
+import TEXTS from '../../../constants/texts';
 import { useState, useEffect } from 'react';
-import logo from '../../assets/icons/header/Logo.svg';
-import call from '../../assets/icons/header/Call.svg';
+import logo from '../../../assets/icons/header/Logo.svg';
+import call from '../../../assets/icons/header/Call.svg';
 import {
   StyledHeader,
   StyledMobileWrapper,
