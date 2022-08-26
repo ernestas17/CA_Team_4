@@ -1,8 +1,22 @@
 import { useState, useEffect } from 'react';
-import { LogoIcon, NavIcon } from '../../../assets/icons';
+import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
+import TEXTS from '../../../constants/texts';
 import Navigation from '../../atoms/Navigation/Navigation';
+
 import links from '../../../constants/navLinks';
-import { StyledHeader, StyledMobileWrapper } from './Header.styled';
+import {
+  StyledHeader,
+  StyledMobileWrapper,
+  StyledNavWrapper,
+  StyledCallContainer,
+  StyledCallWrapper,
+  StyledSeparator,
+  StyledCircle,
+  StyledPhoneBox,
+  StyledTitle,
+  StyledNumber,
+} from './Header.styled';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
   // State
@@ -27,10 +41,11 @@ const Header = () => {
     dimensions < 950 ? setDisplayNav(false) : setDisplayNav(true);
   }, [dimensions]);
 
-  // Function
-  const toggleDisplayNav = () => {
-    displayNav ? setDisplayNav(false) : setDisplayNav(true);
-  };
+  // const { pathname } = useLocation();
+
+  // useEffect(() => {
+  //   setDisplayNav(false);
+  // }, [pathname]);
 
   return (
     <StyledHeader>
@@ -40,11 +55,29 @@ const Header = () => {
         </div>
         <NavIcon
           onClick={() => {
-            toggleDisplayNav();
+            setDisplayNav(!displayNav);
           }}
         />
       </StyledMobileWrapper>
       {displayNav && <Navigation navLinks={links} />}
+      {displayNav &&
+        ((<Navigation navLinks={links} />),
+        (
+          <StyledNavWrapper displayNav={displayNav}>
+            <StyledCallWrapper>
+              <StyledSeparator />
+              <StyledCallContainer>
+                <StyledCircle>
+                  <PhoneIcon />
+                </StyledCircle>
+                <StyledPhoneBox>
+                  <StyledTitle>{TEXTS.header.title}</StyledTitle>
+                  <StyledNumber>{TEXTS.header.number}</StyledNumber>
+                </StyledPhoneBox>
+              </StyledCallContainer>
+            </StyledCallWrapper>
+          </StyledNavWrapper>
+        ))}
     </StyledHeader>
   );
 };
