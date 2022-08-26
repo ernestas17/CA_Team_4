@@ -1,22 +1,10 @@
-// Router
-import { Link } from 'react-router-dom';
-import TEXTS from '../../../constants/texts';
 import { useState, useEffect } from 'react';
-import logo from '../../../assets/icons/header/Logo.svg';
-import call from '../../../assets/icons/header/Call.svg';
-import {
-  StyledHeader,
-  StyledMobileWrapper,
-  StyledCallContainer,
-  StyledCallWrapper,
-  StyledLine,
-  StyledCircle,
-  StyledPhoneBox,
-  StyledTitle,
-  StyledNumber,
-} from './Header.styled';
+import { LogoIcon, NavIcon } from '../../../assets/icons';
+import Navigation from '../../atoms/Navigation/Navigation';
+import links from '../../../constants/navLinks';
+import { StyledHeader, StyledMobileWrapper } from './Header.styled';
 
-const Header = ({ navLinks }) => {
+const Header = () => {
   // State
   const [displayNav, setDisplayNav] = useState(true);
 
@@ -47,36 +35,16 @@ const Header = ({ navLinks }) => {
   return (
     <StyledHeader>
       <StyledMobileWrapper>
-        <img src={logo} alt='Logo' />
-        <i
-          className='fa-solid fa-bars'
+        <div>
+          <LogoIcon />
+        </div>
+        <NavIcon
           onClick={() => {
             toggleDisplayNav();
-          }}></i>
+          }}
+        />
       </StyledMobileWrapper>
-      {displayNav && (
-        <nav>
-          <ul>
-            {navLinks.map((path) => (
-              <li key={path.name}>
-                <Link to={path.link}>{path.name}</Link>
-              </li>
-            ))}
-            <StyledCallWrapper>
-              {dimensions > 950 && <StyledLine />}
-              <StyledCallContainer>
-                <StyledCircle>
-                  <img src={call} alt='call' />
-                </StyledCircle>
-                <StyledPhoneBox>
-                  <StyledTitle>{TEXTS.header.title}</StyledTitle>
-                  <StyledNumber>{TEXTS.header.number}</StyledNumber>
-                </StyledPhoneBox>
-              </StyledCallContainer>
-            </StyledCallWrapper>
-          </ul>
-        </nav>
-      )}
+      {displayNav && <Navigation navLinks={links} />}
     </StyledHeader>
   );
 };

@@ -3,8 +3,6 @@ import { lazy } from 'react';
 import NAV_LINKS from './constants/navLinks';
 // Assets imports
 import footerLogo from './assets/icons/footer/Logo.svg';
-// Links
-import links from './constants/navLinks';
 // Router
 import { Routes, Route } from 'react-router-dom';
 // Page imports
@@ -21,7 +19,7 @@ const Footer = lazy(() => import('./components/organisms/Footer'));
 function App() {
   return (
     <>
-      <Header navLinks={links} />
+      <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutUsPage />} />
