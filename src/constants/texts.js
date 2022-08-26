@@ -318,6 +318,7 @@ const TEXTS = {
   },
   footer: {
     name: 'Finsweet',
+    copyR: 'Copyright',
   },
 };
 
