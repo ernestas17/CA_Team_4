@@ -13,10 +13,8 @@ import {
   StyledSeparator,
   StyledCircle,
   StyledPhoneBox,
-  StyledTitle,
-  StyledNumber,
 } from './Header.styled';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 const Header = () => {
   // State
@@ -71,8 +69,8 @@ const Header = () => {
                   <PhoneIcon />
                 </StyledCircle>
                 <StyledPhoneBox>
-                  <StyledTitle>{TEXTS.header.title}</StyledTitle>
-                  <StyledNumber>{TEXTS.header.number}</StyledNumber>
+                  <p>{TEXTS.header.title}</p>
+                  <p>{TEXTS.header.number}</p>
                 </StyledPhoneBox>
               </StyledCallContainer>
             </StyledCallWrapper>
