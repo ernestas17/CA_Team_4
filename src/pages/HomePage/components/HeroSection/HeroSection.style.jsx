@@ -33,14 +33,8 @@ export const StyledContainerOne = styled.div`
   }
 
   & h1 {
-    font-size: 36px;
-    font-weight: 800;
+    ${({ theme }) => theme.h1}
     margin-bottom: 48px;
-
-    @media screen and (min-width: 820px) {
-      font-size: 64px;
-      line-height: 84px;
-    }
   }
 `;
 
@@ -52,17 +46,12 @@ export const StyledOpenHContainer = styled.div`
 `;
 
 export const StyledTitle = styled.div`
-  font-weight: 500;
-  line-height: 24px;
-  color: #939191;
+  ${({ theme }) => theme.caption}
+  color:  ${({ theme }) => theme.color.darkGrey}
 `;
 
 export const StyledOpenHours = styled.div`
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  color: #1e1b1b;
-  line-height: 31.5px;
+  ${({ theme }) => theme.body1}
 `;
 
 // Container 2
