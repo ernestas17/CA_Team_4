@@ -1,8 +1,8 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../constants/breakpoints';
 
 export const StyledHeader = styled.header`
-  background-color: #ffffff;
-  padding: 18px 10px 16px 10px;
+  padding: 18px 20px 16px 20px;
   max-width: 1300px;
   margin: 0 auto;
 
@@ -10,13 +10,17 @@ export const StyledHeader = styled.header`
   flex-direction: column;
   align-items: center;
 
-  @media screen and (min-width: 950px) {
+  & svg {
+    color: ${({ theme }) => theme.color.black};
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
     justify-content: space-between;
     padding: 18px 40px 16px 40px;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     padding: 18px 0px 16px 0px;
   }
 `;
@@ -24,8 +28,7 @@ export const StyledHeader = styled.header`
 export const StyledNavWrapper = styled.div`
   display: ${({ displayNav }) => (displayNav ? 'flex' : 'none')};
 
-  z-index: 10;
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     display: flex;
   }
 `;
@@ -36,7 +39,7 @@ export const StyledMobileWrapper = styled.div`
   align-items: center;
   width: 100%;
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     width: 0px;
   }
 `;
@@ -45,24 +48,24 @@ export const StyledCallWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 265px;
+  justify-content: flex-end;
+  width: 250px;
   gap: 18px;
 
-  @media screen and (min-width: 950px) {
-    margin-left: 32px;
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
     gap: 32px;
   }
 `;
 
 export const StyledSeparator = styled.div`
-  background-color: #939191;
-  border: 1px solid #939191;
+  background-color: ${({ theme }) => theme.color.darkGrey};
+  border: 1px solid ${({ theme }) => theme.color.darkGrey};
   height: 0;
   width: 160px;
   opacity: 0.36;
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     height: 42px;
     width: 0;
   }
@@ -82,25 +85,25 @@ export const StyledCircle = styled.div`
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: #61c3a1;
+  background-color: ${({ theme }) => theme.color.darkGreen};
+
+  & svg {
+    color: ${({ theme }) => theme.color.white};
+  }
 `;
 
 export const StyledPhoneBox = styled.div`
   display: flex;
   flex-direction: column;
-`;
 
-export const StyledTitle = styled.p`
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1e1b1b;
-  opacity: 0.7;
-`;
+  & p:first-of-type {
+    ${({ theme }) => theme.caption}
+    color: ${({ theme }) => theme.color.black};
+    opacity: 0.7;
+  }
 
-export const StyledNumber = styled.p`
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 175%;
-  color: #1e1b1b;
+  & p:last-of-type {
+    ${({ theme }) => theme.body1}
+    color: ${({ theme }) => theme.color.black};
+  }
 `;

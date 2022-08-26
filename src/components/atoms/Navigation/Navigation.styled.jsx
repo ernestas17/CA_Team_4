@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../constants/breakpoints';
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -6,7 +7,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   width: 80%;
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
     justify-content: flex-end;
   }
@@ -18,7 +19,7 @@ export const StyledNav = styled.nav`
     flex-direction: column;
     margin-top: 20px;
 
-    @media screen and (min-width: 950px) {
+    @media screen and (min-width: ${BREAKPOINTS.lg}) {
       flex-direction: row;
       margin-top: 0px;
     }
@@ -27,7 +28,7 @@ export const StyledNav = styled.nav`
       list-style: none;
       margin-bottom: 18px;
 
-      @media screen and (min-width: 950px) {
+      @media screen and (min-width: ${BREAKPOINTS.lg}) {
         margin-bottom: 0px;
         &:not(:nth-child(5)) {
           margin-right: 40px;
@@ -35,9 +36,13 @@ export const StyledNav = styled.nav`
       }
 
       & a {
-        text-decoration: none;
-        color: #1e1b1b;
+        ${({ theme }) => theme.body2}
+        color: ${({ theme }) => theme.color.black};
+        transition: all 0.5s;
+
         &:hover {
+          opacity: 0.8;
+          transition: color 0.15s ease-in;
         }
       }
     }
