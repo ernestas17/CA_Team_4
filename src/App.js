@@ -2,7 +2,6 @@ import { lazy } from 'react';
 // Constants imports
 import NAV_LINKS from './constants/navLinks';
 // Assets imports
-import footerLogo from './assets/icons/footer/Logo.svg';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './assets/styles/StyledGuide';
@@ -30,7 +29,7 @@ function App() {
           <Route path='/blog' element={<BlogPage />} />
           <Route path='/contact' element={<ContactPage />} />
         </Routes>
-        <Footer logo={footerLogo} navLinks={NAV_LINKS} />
+        <Footer navLinks={NAV_LINKS} />
       </ThemeProvider>
     </>
   );
