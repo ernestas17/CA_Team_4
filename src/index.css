@@ -11,3 +11,15 @@ main {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
