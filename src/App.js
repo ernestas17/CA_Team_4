@@ -3,8 +3,9 @@ import { lazy } from 'react';
 import NAV_LINKS from './constants/navLinks';
 // Assets imports
 import footerLogo from './assets/icons/footer/Logo.svg';
-// Router
 import { Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './assets/styles/StyledGuide';
 // Page imports
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
@@ -19,16 +20,18 @@ const Footer = lazy(() => import('./components/organisms/Footer'));
 function App() {
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutUsPage />} />
-        <Route path='/services' element={<ServicesPage />} />
-        <Route path='/services/service' element={<SingleServicePage />} />
-        <Route path='/blog' element={<BlogPage />} />
-        <Route path='/contact' element={<ContactPage />} />
-      </Routes>
-      <Footer logo={footerLogo} navLinks={NAV_LINKS} />
+      <ThemeProvider theme={theme}>
+        <Header />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutUsPage />} />
+          <Route path='/services' element={<ServicesPage />} />
+          <Route path='/services/service' element={<SingleServicePage />} />
+          <Route path='/blog' element={<BlogPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+        </Routes>
+        <Footer logo={footerLogo} navLinks={NAV_LINKS} />
+      </ThemeProvider>
     </>
   );
 }
