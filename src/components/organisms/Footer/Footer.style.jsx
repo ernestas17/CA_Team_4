@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../constants/breakpoints';
 
 export const StyledFooter = styled.footer`
   height: 250px;
   width: calc(100vw - (100vw - 100%));
-  padding: 10px 0;
-  background-color: #1e1b1b;
-  border: 1px #1e1b1b solid;
+  padding: 20px 0;
+  background-color: ${({ theme }) => theme.color.black};
+  border: 1px ${({ theme }) => theme.color.black} solid;
 
   max-width: 1920px;
   margin: 0 auto;
@@ -14,10 +15,14 @@ export const StyledFooter = styled.footer`
   align-items: center;
   justify-content: center;
 
-  /* Tablet */
-  @media screen and (min-width: 466px) {
-    height: 157px;
-    padding: 0;
+  & p {
+    ${({ theme }) => theme.body2}
+    color: ${({ theme }) => theme.color.darkGrey};
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
+    max-height: 157px;
+    padding: 20px 40px;
   }
 `;
 
@@ -25,39 +30,40 @@ export const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1300px;
   height: 100%;
 
-  /* Desktop */
-  @media screen and (min-width: 820px) {
-    flex-direction: row;
-  }
-`;
-
-export const StyledCopyrights = styled.p`
-  color: #939191;
-  font-weight: 600;
-`;
-
-export const StyledUl = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  /* Tablet */
-  @media screen and (min-width: 466px) {
-    flex-direction: row;
-    gap: 40px;
+  & svg {
+    color: ${({ theme }) => theme.color.white};
   }
 
-  & li {
-    list-style: none;
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    flex-direction: row;
+  }
 
-    & a {
-      text-decoration: none;
-      color: #fff;
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (min-width: ${BREAKPOINTS.sm}) {
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    & li {
+      list-style: none;
+
+      & a {
+        color: ${({ theme }) => theme.color.white};
+
+        &:hover {
+          color: ${({ theme }) => theme.color.grey};
+          transition: 0.2s;
+        }
+      }
     }
   }
 `;
