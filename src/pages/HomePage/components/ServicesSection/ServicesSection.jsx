@@ -3,8 +3,8 @@ import NAV_LINKS from '../../../../constants/navLinks';
 import wrenchIcon from '../../../../assets/icons/homePage/servicesSection/wrench.svg';
 import mechanicIcon from '../../../../assets/icons/homePage/servicesSection/mechanic.svg';
 import dollarIcon from '../../../../assets/icons/homePage/servicesSection/dollar.svg';
-import ArrowLink from '../../../../components/ArrowLink/ArrowLink';
-import Button from '../../../../components/Button/Button';
+import ArrowLink from '../../../../components/atoms/ArrowLink/ArrowLink';
+import Button from '../../../../components/atoms/Button/Button';
 import {
   StyledServicesSection,
   StyledContainerL,

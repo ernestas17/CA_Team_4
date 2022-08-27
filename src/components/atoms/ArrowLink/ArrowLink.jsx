@@ -1,6 +1,6 @@
 import { StyledArrowLink } from './ArrowLink.style';
 import { Link } from 'react-router-dom';
-import arrowIcon from '../../assets/icons/componentIcons/Arrow.svg';
+import arrowIcon from '../../../assets/icons/componentIcons/Arrow.svg';
 
 const ArrowLink = ({ link, text }) => {
   return (

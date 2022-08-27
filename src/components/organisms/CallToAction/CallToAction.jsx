@@ -1,5 +1,6 @@
-import Button from '../Button/Button';
-import TEXTS from '../../constants/texts';
+import Button from '../../atoms/Button/Button';
+import TEXTS from '../../../constants/texts';
+import NAV_LINKS from '../../../constants/navLinks';
 
 import {
   StyledCallToAction,
@@ -15,7 +16,7 @@ const CallToAction = () => {
         <StyledAbsoluteDiv>
           <div>
             <h3>{TEXTS.callToAction.heading}</h3>
-            <Button text={TEXTS.callToAction.button} />
+            <Button text={TEXTS.callToAction.button} path={NAV_LINKS[4].link} />
           </div>
         </StyledAbsoluteDiv>
       </StyledImgContainerOne>

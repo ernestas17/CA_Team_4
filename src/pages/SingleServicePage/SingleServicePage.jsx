@@ -1,7 +1,7 @@
-import CallToAction from '../../components/CallToAction';
-import FooterContacts from '../../components/FooterContacts';
+import CallToAction from '../../components/organisms/CallToAction';
+import FooterContacts from '../../components/organisms/FooterContacts';
 import TEXTS from '../../constants/texts';
-import Card from '../../components/Card/Card';
+import Card from '../../components/atoms/Card';
 
 import repairIcon from '../../assets/icons/homePage/CardsSection/engine.svg';
 import washIcon from '../../assets/icons/homePage/CardsSection/CarDiagnostic.svg';

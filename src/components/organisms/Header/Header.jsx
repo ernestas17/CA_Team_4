@@ -1,22 +1,22 @@
-// Router
-import { Link } from 'react-router-dom';
-import TEXTS from '../../constants/texts';
 import { useState, useEffect } from 'react';
-import logo from '../../assets/icons/header/Logo.svg';
-import call from '../../assets/icons/header/Call.svg';
+import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
+import TEXTS from '../../../constants/texts';
+import Navigation from '../../atoms/Navigation/Navigation';
+import { Link } from 'react-router-dom';
+import links from '../../../constants/navLinks';
 import {
   StyledHeader,
   StyledMobileWrapper,
+  StyledNavWrapper,
   StyledCallContainer,
   StyledCallWrapper,
-  StyledLine,
+  StyledSeparator,
   StyledCircle,
   StyledPhoneBox,
-  StyledTitle,
-  StyledNumber,
 } from './Header.styled';
+// import { useLocation } from 'react-router-dom';
 
-const Header = ({ navLinks }) => {
+const Header = () => {
   // State
   const [displayNav, setDisplayNav] = useState(true);
 
@@ -39,44 +39,43 @@ const Header = ({ navLinks }) => {
     dimensions < 950 ? setDisplayNav(false) : setDisplayNav(true);
   }, [dimensions]);
 
-  // Function
-  const toggleDisplayNav = () => {
-    displayNav ? setDisplayNav(false) : setDisplayNav(true);
-  };
+  // const { pathname } = useLocation();
+
+  // useEffect(() => {
+  //   setDisplayNav(false);
+  // }, [pathname]);
 
   return (
     <StyledHeader>
       <StyledMobileWrapper>
-        <img src={logo} alt='Logo' />
-        <i
-          className='fa-solid fa-bars'
+        <Link to={'/'}>
+          <LogoIcon />
+        </Link>
+        <NavIcon
           onClick={() => {
-            toggleDisplayNav();
-          }}></i>
+            setDisplayNav(!displayNav);
+          }}
+        />
       </StyledMobileWrapper>
-      {displayNav && (
-        <nav>
-          <ul>
-            {navLinks.map((path) => (
-              <li key={path.name}>
-                <Link to={path.link}>{path.name}</Link>
-              </li>
-            ))}
+      {displayNav && <Navigation navLinks={links} />}
+      {displayNav &&
+        ((<Navigation navLinks={links} />),
+        (
+          <StyledNavWrapper displayNav={displayNav}>
             <StyledCallWrapper>
-              {dimensions > 950 && <StyledLine />}
+              <StyledSeparator />
               <StyledCallContainer>
                 <StyledCircle>
-                  <img src={call} alt='call' />
+                  <PhoneIcon />
                 </StyledCircle>
                 <StyledPhoneBox>
-                  <StyledTitle>{TEXTS.header.title}</StyledTitle>
-                  <StyledNumber>{TEXTS.header.number}</StyledNumber>
+                  <p>{TEXTS.header.title}</p>
+                  <p>{TEXTS.header.number}</p>
                 </StyledPhoneBox>
               </StyledCallContainer>
             </StyledCallWrapper>
-          </ul>
-        </nav>
-      )}
+          </StyledNavWrapper>
+        ))}
     </StyledHeader>
   );
 };

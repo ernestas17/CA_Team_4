@@ -1,5 +1,5 @@
 import wheelImg from '../../../../assets/images/servicesPage/servicesSection/Wheel.jpg';
-import ArrowLink from '../../../../components/ArrowLink/ArrowLink';
+import ArrowLink from '../../../../components/atoms/ArrowLink/ArrowLink';
 import TEXTS from '../../../../constants/texts';
 import diagnosticIcon from '../../../../assets/icons/homePage/CardsSection/CarDiagnostic.svg';
 import engineIcon from '../../../../assets/icons/homePage/CardsSection/engine.svg';
@@ -7,7 +7,7 @@ import bodyWorkIcon from '../../../../assets/icons/homePage/CardsSection/bodyWor
 import batteryIcon from '../../../../assets/icons/homePage/CardsSection/batery.svg';
 import acRepIcon from '../../../../assets/icons/homePage/CardsSection/engine.svg';
 
-import Card from '../../../../components/Card/Card';
+import Card from '../../../../components/atoms/Card';
 import {
   StyledServicesSection,
   StyledContL,

@@ -1,5 +1,5 @@
-import Card from '../../../../components/Card';
-import ArrowLink from '../../../../components/ArrowLink/ArrowLink';
+import Card from '../../../../components/atoms/Card';
+import ArrowLink from '../../../../components/atoms/ArrowLink/ArrowLink';
 import NAV_LINKS from '../../../../constants/navLinks';
 import {
   StyledCardsSection,

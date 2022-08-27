@@ -5,7 +5,8 @@ import golf from '../../../../assets/images/servicesPage/processSection/Golf.jpg
 import hyunai from '../../../../assets/images/servicesPage/processSection/Hyundai.jpg';
 import tires from '../../../../assets/images/servicesPage/processSection/Tires.jpg';
 import nissan from '../../../../assets/images/servicesPage/processSection/Nissan.jpg';
-import Button from '../../../../components/Button/Button';
+import Button from '../../../../components/atoms/Button/Button';
+import NAV_LINKS from '../../../../constants/navLinks';
 import {
   StyledProcessSection,
   StyledTopPart,
@@ -45,6 +46,7 @@ const ProcessSection = () => {
           <Button
             primary
             text={TEXTS.servicesPage.processSection.card2.btnTxt}
+            path={NAV_LINKS[4].link}
           />
         </StyledCardBottom>
       </StyledBottomPart>

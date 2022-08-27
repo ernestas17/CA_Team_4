@@ -1,6 +1,7 @@
 import TEXTS from '../../../../constants/texts';
-import Button from '../../../../components/Button/Button';
+import Button from '../../../../components/atoms/Button/Button';
 import line from '../../../../assets/icons/homePage/processSection/Line.svg';
+import NAV_LINKS from '../../../../constants/navLinks';
 import {
   StyledProcessSection,
   StyledContainerL,
@@ -19,7 +20,11 @@ const ProcessSection = () => {
       <StyledContainerL>
         <h2>{TEXTS.homePage.processSection.heading}</h2>
         <p>{TEXTS.homePage.processSection.paragraph}</p>
-        <Button primary text={TEXTS.homePage.processSection.buttonTxt} />
+        <Button
+          primary
+          text={TEXTS.homePage.processSection.buttonTxt}
+          path={NAV_LINKS[1].link}
+        />
       </StyledContainerL>
       <StyledContainerR>
         <StyledServiceWrapper>

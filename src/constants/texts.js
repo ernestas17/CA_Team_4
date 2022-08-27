@@ -13,7 +13,7 @@ const TEXTS = {
       hoursSh: 'hr',
       service: 'Quick service',
       rating: {
-        number: '4.5/5',
+        number: '4.0/5',
         text: 'Rating',
       },
     },
@@ -318,6 +318,7 @@ const TEXTS = {
   },
   footer: {
     name: 'Finsweet',
+    copyR: 'Copyright',
   },
 };
 
