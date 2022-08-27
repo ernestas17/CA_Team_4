@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../../constants/breakpoints';
 
 export const StyledFooter = styled.footer`
-  height: 250px;
+  height: fit-content;
   width: calc(100vw - (100vw - 100%));
   padding: 20px 0;
   background-color: ${({ theme }) => theme.color.black};
@@ -21,8 +21,11 @@ export const StyledFooter = styled.footer`
   }
 
   @media screen and (min-width: ${BREAKPOINTS.sm}) {
-    max-height: 157px;
     padding: 20px 40px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    height: 157px;
   }
 `;
 
@@ -41,6 +44,10 @@ export const StyledWrapper = styled.div`
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
+  }
+
+  & nav {
+    padding: 16px 0;
   }
 
   & ul {
