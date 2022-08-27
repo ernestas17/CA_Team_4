@@ -1,6 +1,5 @@
 import Button from '../../../../components/atoms/Button/Button';
-import clockSvg from '../../../../assets/icons/homePage/heroSection/clock.svg';
-import star from '../../../../assets/icons/homePage/heroSection/Star 1.svg';
+import { ClockIcon, StarIcon } from '../../../../assets/icons';
 import TEXTS from '../../../../constants/texts';
 import NAV_LINKS from '../../../../constants/navLinks';
 
@@ -35,7 +34,7 @@ const HeroSection = () => {
           />
         </div>
         <StyledOpenHContainer>
-          <img src={clockSvg} alt='clockImg' />
+          <ClockIcon />
           <div>
             <StyledTitle>{TEXTS.homePage.sectionOne.title}</StyledTitle>
             <StyledOpenHours>
@@ -68,19 +67,19 @@ const HeroSection = () => {
             <StyledStarsContainer>
               <ul>
                 <li>
-                  <img src={star} alt='Star' />
+                  <StarIcon />
                 </li>
                 <li>
-                  <img src={star} alt='Star' />
+                  <StarIcon />
                 </li>
                 <li>
-                  <img src={star} alt='Star' />
+                  <StarIcon />
                 </li>
                 <li>
-                  <img src={star} alt='Star' />
+                  <StarIcon />
                 </li>
                 <li>
-                  <img src={star} alt='Star' />
+                  <StarIcon />
                 </li>
               </ul>
             </StyledStarsContainer>
