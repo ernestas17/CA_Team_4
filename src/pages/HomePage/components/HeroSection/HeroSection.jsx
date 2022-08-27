@@ -2,6 +2,7 @@ import Button from '../../../../components/atoms/Button/Button';
 import clockSvg from '../../../../assets/icons/homePage/heroSection/clock.svg';
 import star from '../../../../assets/icons/homePage/heroSection/Star 1.svg';
 import TEXTS from '../../../../constants/texts';
+import NAV_LINKS from '../../../../constants/navLinks';
 
 import {
   StyledHeroSection,
@@ -27,7 +28,11 @@ const HeroSection = () => {
       <StyledContainerOne>
         <div>
           <h1>{TEXTS.homePage.sectionOne.heading}</h1>
-          <Button primary text={TEXTS.homePage.sectionOne.button} />
+          <Button
+            primary
+            text={TEXTS.homePage.sectionOne.button}
+            path={NAV_LINKS[4].link}
+          />
         </div>
         <StyledOpenHContainer>
           <img src={clockSvg} alt='clockImg' />
