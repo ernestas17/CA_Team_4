@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { LogoIcon, NavIcon, PhoneIcon } from '../../../assets/icons';
 import TEXTS from '../../../constants/texts';
 import Navigation from '../../atoms/Navigation/Navigation';
-
+import { Link } from 'react-router-dom';
 import links from '../../../constants/navLinks';
 import {
   StyledHeader,
@@ -48,9 +48,9 @@ const Header = () => {
   return (
     <StyledHeader>
       <StyledMobileWrapper>
-        <div>
+        <Link to={'/'}>
           <LogoIcon />
-        </div>
+        </Link>
         <NavIcon
           onClick={() => {
             setDisplayNav(!displayNav);

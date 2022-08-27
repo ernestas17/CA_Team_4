@@ -8,7 +8,9 @@ const Footer = ({ navLinks }) => {
   return (
     <StyledFooter>
       <StyledWrapper>
-        <LogoIcon />
+        <Link to={'/'}>
+          <LogoIcon />
+        </Link>
         <nav>
           <ul>
             {navLinks.map((page) => (
