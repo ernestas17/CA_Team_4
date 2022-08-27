@@ -1,14 +1,16 @@
 import TEXTS from '../../../constants/texts';
 
 import {
+  FacebookIcon,
+  TwitterIcon,
+  InstagramIcon,
+  LinkedInIcon,
+} from '../../../assets/icons/index';
+import {
   StyledFooterContacts,
   StyledWrapper,
   StyledContainer,
-  StyledHeader,
-  StyledIconsUl,
   StyledContactBox,
-  StyledContactType,
-  StyledContact,
 } from './FooterContacts.style';
 
 const FooterContacts = () => {
@@ -16,50 +18,42 @@ const FooterContacts = () => {
     <StyledFooterContacts>
       <StyledWrapper>
         <StyledContainer>
-          <StyledHeader>{TEXTS.footerContacts.heading}</StyledHeader>
-          <StyledIconsUl>
+          <h3>{TEXTS.footerContacts.heading}</h3>
+          <ul>
             <li>
               <a href='https://www.facebook.com/'>
-                <i className='fa-brands fa-facebook'></i>
+                <FacebookIcon />
               </a>
             </li>
             <li>
               <a href='https://twitter.com/'>
-                <i className='fa-brands fa-twitter'></i>
+                <TwitterIcon />
               </a>
             </li>
             <li>
               <a href='https://www.instagram.com/'>
-                <i className='fa-brands fa-instagram'></i>
+                <InstagramIcon />
               </a>
             </li>
             <li>
               <a href='https://www.linkedin.com/'>
-                <i className='fa-brands fa-linkedin'></i>
+                <LinkedInIcon />
               </a>
             </li>
-          </StyledIconsUl>
+          </ul>
         </StyledContainer>
         <StyledContainer>
           <StyledContactBox>
-            <StyledContactType>
-              {TEXTS.footerContacts.phone.title}
-            </StyledContactType>
-            <StyledContact>{TEXTS.footerContacts.phone.phoneNr}</StyledContact>
+            <p>{TEXTS.footerContacts.phone.title}</p>
+            <p>{TEXTS.footerContacts.phone.phoneNr}</p>
           </StyledContactBox>
           <StyledContactBox>
-            <StyledContactType>
-              {TEXTS.footerContacts.address.title}
-            </StyledContactType>
-            <StyledContact>{TEXTS.footerContacts.address.title}</StyledContact>
+            <p>{TEXTS.footerContacts.address.title}</p>
+            <p>{TEXTS.footerContacts.address.title}</p>
           </StyledContactBox>
           <StyledContactBox>
-            <StyledContactType>
-              {TEXTS.footerContacts.workingHours.title}
-            </StyledContactType>
-            <StyledContact>
-              {TEXTS.footerContacts.workingHours.workingHours}
-            </StyledContact>
+            <p>{TEXTS.footerContacts.workingHours.title}</p>
+            <p>{TEXTS.footerContacts.workingHours.workingHours}</p>
           </StyledContactBox>
         </StyledContainer>
       </StyledWrapper>
