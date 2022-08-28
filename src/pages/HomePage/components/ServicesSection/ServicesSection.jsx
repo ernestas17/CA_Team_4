@@ -19,6 +19,7 @@ const ServicesSection = () => {
         <h2>{TEXTS.homePage.servicesSection.services.heading}</h2>
         {SERVICES.map((service) => (
           <ServiceCard
+            key={service.id}
             icon={service.icon}
             title={service.title}
             text={service.description}
