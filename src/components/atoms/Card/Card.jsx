@@ -6,7 +6,7 @@ const Card = ({ icon, text, customWidth, customHeight }) => {
       icon={icon}
       customWidth={customWidth}
       customHeight={customHeight}>
-      <img src={icon} alt='icon' />
+      {icon}
       <StyledCardText>{text}</StyledCardText>
     </StyledCard>
   );
