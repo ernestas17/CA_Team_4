@@ -5,12 +5,16 @@ export const StyledArrowLink = styled.div`
   align-items: center;
   gap: 21px;
 
-  a {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 175%;
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 
-    color: #1e1b1b;
-    text-decoration: none;
+    ${({ theme }) => theme.body1}
+    color: ${({ theme }) => theme.color.black};
+
+    & svg {
+      color: ${({ theme }) => theme.color.black};
+    }
   }
 `;
