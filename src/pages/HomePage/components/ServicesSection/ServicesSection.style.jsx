@@ -12,7 +12,7 @@ export const StyledServicesSection = styled.section`
 
   background-color: ${({ theme }) => theme.color.grey};
   height: fit-content;
-  padding: 128px 20px;
+  padding: 64px 20px;
 
   max-width: 1922px;
   margin: 0 auto;
