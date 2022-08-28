@@ -93,47 +93,6 @@ export const StyledTxtCardCont = styled.div`
   gap: 32px;
 `;
 
-export const StyledServiceWrapper = styled.div`
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-  gap: 16px;
-
-  margin-bottom: 32px;
-`;
-export const StyledIconCircle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 47px;
-  width: 47px;
-  background-color: #f5f5f5;
-  border-radius: 50%;
-`;
-
-export const StyledServiceTxtWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 83%;
-
-  & h6 {
-    font-size: 24px;
-    line-height: 28px;
-
-    color: #1e1b1b;
-    margin-bottom: 6px;
-  }
-`;
-
-export const StyledServiceP = styled.p`
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 28px;
-  color: #1e1b1b;
-  opacity: 0.6;
-`;
-
 export const StyledContentBlock = styled.div`
   width: 100%;
   max-width: 854px;

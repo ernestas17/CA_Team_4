@@ -1,31 +1,30 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../constants/breakpoints';
 
 export const StyledCardsSection = styled.section`
-  background: #f2f2f2;
+  background: ${({ theme }) => theme.color.lightGrey};
   width: 100%;
-  padding: 128px 10px;
+  padding: 64px 20px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding: 128px 40px;
+  }
+
   & h6 {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
+    ${({ theme }) => theme.title2}
     text-align: center;
-    letter-spacing: -0.03em;
-    color: #1e1b1b;
+    color: ${({ theme }) => theme.color.black};
     margin-bottom: 8px;
   }
 
   & h2 {
-    font-weight: 800;
-    font-size: 58px;
-    line-height: 76px;
+    ${({ theme }) => theme.h2}
     text-align: center;
-    letter-spacing: -0.03em;
-    color: #1e1b1b;
+    color: ${({ theme }) => theme.color.black};
     max-width: 858px;
     margin-bottom: 64px;
   }
@@ -37,15 +36,15 @@ export const StyledCardsContainer = styled.div`
   grid-template-columns: 1fr;
   margin-bottom: 32px;
 
-  @media screen and (min-width: 820px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${BREAKPOINTS.xl}) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;
@@ -55,32 +54,15 @@ export const StyledLinkWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
 
-  @media screen and (min-width: 820px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     width: 638px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${BREAKPOINTS.xl}) {
     width: 960px;
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     width: 1282px;
-  }
-`;
-
-export const StyledLink = styled.div`
-  display: flex;
-  align-items: baseline;
-  gap: 21px;
-  margin-top: 32px;
-  align-items: center;
-
-  a {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 175%;
-
-    color: #1e1b1b;
-    text-decoration: none;
   }
 `;

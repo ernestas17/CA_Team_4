@@ -1,27 +1,27 @@
 import TEXTS from './texts';
+import wrenchIcon from '../assets/icons/services-wrench.svg';
+import mechanicIcon from '../assets/icons/services-mechanic.svg';
+import dollarIcon from '../assets/icons/services-dollar.svg';
 import { uid } from 'uid';
-import iconOne from '../assets/icons/aboutUsPage/Icon.png';
-import serviceIconTwo from '../assets/icons/aboutUsPage/Icon2.svg';
-import serviceIconThree from '../assets/icons/aboutUsPage/Icon3.svg';
 
 const SERVICES = [
   {
     id: uid(),
-    icon: `${iconOne}`,
-    title: `${TEXTS.aboutUsPage.service.convenient.title}`,
-    description: `${TEXTS.aboutUsPage.service.convenient.description}`,
+    icon: `${wrenchIcon}`,
+    title: `${TEXTS.homePage.servicesSection.services.service1.title}`,
+    description: `${TEXTS.homePage.servicesSection.services.service1.text}`,
   },
   {
     id: uid(),
-    icon: `${serviceIconTwo}`,
-    title: `${TEXTS.aboutUsPage.service.expert.title}`,
-    description: `${TEXTS.aboutUsPage.service.expert.description}`,
+    icon: `${mechanicIcon}`,
+    title: `${TEXTS.homePage.servicesSection.services.service2.title}`,
+    description: `${TEXTS.homePage.servicesSection.services.service2.text}`,
   },
   {
     id: uid(),
-    icon: `${serviceIconThree}`,
-    title: `${TEXTS.aboutUsPage.service.transparent.title}`,
-    description: `${TEXTS.aboutUsPage.service.transparent.description}`,
+    icon: `${dollarIcon}`,
+    title: `${TEXTS.homePage.servicesSection.services.service3.title}`,
+    description: `${TEXTS.homePage.servicesSection.services.service3.text}`,
   },
 ];
 

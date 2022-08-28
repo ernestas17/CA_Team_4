@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 import BREAKPOINTS from '../../../../constants/breakpoints';
 
-export const StyledServicesSection = styled.section`
+export const StyledProcessSection = styled.section`
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
-  gap: 72px;
+  gap: 70px;
 
-  background-color: ${({ theme }) => theme.color.grey};
+  background-color: ${({ theme }) => theme.color.white};
   height: fit-content;
   padding: 64px 20px;
 
@@ -19,6 +18,7 @@ export const StyledServicesSection = styled.section`
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 128px 40px;
+    gap: 131px;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
@@ -31,42 +31,33 @@ export const StyledContainerL = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 584px;
+  max-width: 555px;
 
   & h2 {
     ${({ theme }) => theme.h2}
-    line-height: 76px;
+    width: 100%;
     color: ${({ theme }) => theme.color.black};
-    -webkit-text-stroke: 2px ${({ theme }) => theme.color.darkBlack};
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    max-width: 583px;
-    margin-bottom: 48px;
+    margin-bottom: 16px;
   }
 
-  & a {
-    margin-left: 63px;
+  & p {
+    ${({ theme }) => theme.body2}
+
+    color: ${({ theme }) => theme.color.black};
+    opacity: 0.6;
+
+    max-width: 437px;
+    margin-bottom: 32px;
   }
 `;
 
-// Right container
-
 export const StyledContainerR = styled.div`
   width: 100%;
-  max-width: 625px;
+  max-width: 555px;
 
   display: flex;
   flex-direction: column;
-
-  & form {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 32px;
-  }
-
-  & h3 {
-    ${({ theme }) => theme.h3}
-    margin-bottom: 32px;
-  }
+  gap: 24px;
+  align-items: baseline;
 `;
