@@ -6,11 +6,9 @@ import Card from '../../components/atoms/Card';
 import repairIcon from '../../assets/icons/homePage/CardsSection/engine.svg';
 import washIcon from '../../assets/icons/homePage/CardsSection/CarDiagnostic.svg';
 import batteryIcon from '../../assets/icons/homePage/CardsSection/batery.svg';
-import wrenchIcon from '../../assets/icons/homePage/servicesSection/wrench.svg';
-import mechanicIcon from '../../assets/icons/homePage/servicesSection/mechanic.svg';
-import dollarIcon from '../../assets/icons/homePage/servicesSection/dollar.svg';
 import wheelImg from '../../assets/images/singleServicePage/Rims.jpg';
-
+import SERVICES from '../../constants/services';
+import ServiceCard from '../../components/atoms/ServiceCard';
 import {
   StyledSingleServicePage,
   StyledSection,
@@ -19,10 +17,6 @@ import {
   StyledOtherServicesH5,
   StyledCardsCont,
   StyledTxtCardCont,
-  StyledServiceWrapper,
-  StyledIconCircle,
-  StyledServiceTxtWrapper,
-  StyledServiceP,
   StyledContentBlock,
   StyledImg,
   StyledP1,
@@ -64,45 +58,13 @@ const SingleServicePage = () => {
             </StyledCardsCont>
           </StyledOtherServices>
           <StyledTxtCardCont>
-            <StyledServiceWrapper>
-              <StyledIconCircle>
-                <img src={wrenchIcon} alt='wrench' />
-              </StyledIconCircle>
-              <StyledServiceTxtWrapper>
-                <h6>
-                  {TEXTS.homePage.servicesSection.services.service1.title}
-                </h6>
-                <StyledServiceP>
-                  {TEXTS.homePage.servicesSection.services.service1.text}
-                </StyledServiceP>
-              </StyledServiceTxtWrapper>
-            </StyledServiceWrapper>
-            <StyledServiceWrapper>
-              <StyledIconCircle>
-                <img src={mechanicIcon} alt='mechanic' />
-              </StyledIconCircle>
-              <StyledServiceTxtWrapper>
-                <h6>
-                  {TEXTS.homePage.servicesSection.services.service2.title}
-                </h6>
-                <StyledServiceP>
-                  {TEXTS.homePage.servicesSection.services.service1.text}
-                </StyledServiceP>
-              </StyledServiceTxtWrapper>
-            </StyledServiceWrapper>
-            <StyledServiceWrapper>
-              <StyledIconCircle>
-                <img src={dollarIcon} alt='dollar' />
-              </StyledIconCircle>
-              <StyledServiceTxtWrapper>
-                <h6>
-                  {TEXTS.homePage.servicesSection.services.service3.title}
-                </h6>
-                <StyledServiceP>
-                  {TEXTS.homePage.servicesSection.services.service2.text}
-                </StyledServiceP>
-              </StyledServiceTxtWrapper>
-            </StyledServiceWrapper>
+            {SERVICES.map((service) => (
+              <ServiceCard
+                icon={service.icon}
+                title={service.title}
+                text={service.description}
+              />
+            ))}
           </StyledTxtCardCont>
         </StyledCardsBlock>
         <StyledContentBlock>
