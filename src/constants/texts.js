@@ -52,17 +52,14 @@ const TEXTS = {
         'Through True Rich Attended does no end it his mother since real had half every him case in packages enquire',
       buttonTxt: 'Learn more',
       step1: {
-        number: '01',
         title: 'Get a Quote',
         text: 'Through True Rich Attended does no end it his mother since real had half every.',
       },
       step2: {
-        number: '02',
         title: 'Book an Appointment',
         text: 'Through True Rich Attended does no end it his mother since real had half every.',
       },
       step3: {
-        number: '03',
         title: 'Get your Service Done',
         text: 'Through True Rich Attended does no end it his mother since real had half every.',
       },
