@@ -1,11 +1,8 @@
 import CallToAction from '../../components/organisms/CallToAction';
 import FooterContacts from '../../components/organisms/FooterContacts';
 import TEXTS from '../../constants/texts';
+import { CARDS_SINGLE_SERVICE } from '../../constants/serviceCards';
 import Card from '../../components/atoms/Card';
-
-import repairIcon from '../../assets/icons/homePage/CardsSection/engine.svg';
-import washIcon from '../../assets/icons/homePage/CardsSection/CarDiagnostic.svg';
-import batteryIcon from '../../assets/icons/homePage/CardsSection/batery.svg';
 import wheelImg from '../../assets/images/singleServicePage/Rims.jpg';
 import SERVICES from '../../constants/services';
 import ServiceCard from '../../components/atoms/ServiceCard';
@@ -37,24 +34,15 @@ const SingleServicePage = () => {
               {TEXTS.singleServicePage.cards.title}
             </StyledOtherServicesH5>
             <StyledCardsCont>
-              <Card
-                icon={repairIcon}
-                text={TEXTS.singleServicePage.cards.card1}
-                customWidth={'264px'}
-                customHeight={'158px'}
-              />
-              <Card
-                icon={washIcon}
-                text={TEXTS.singleServicePage.cards.card2}
-                customWidth={'264px'}
-                customHeight={'158px'}
-              />
-              <Card
-                icon={batteryIcon}
-                text={TEXTS.singleServicePage.cards.card3}
-                customWidth={'264px'}
-                customHeight={'158px'}
-              />
+              {CARDS_SINGLE_SERVICE.map((card) => (
+                <Card
+                  key={card.id}
+                  icon={card.icon}
+                  text={card.text}
+                  customWidth={'264px'}
+                  customHeight={'158px'}
+                />
+              ))}
             </StyledCardsCont>
           </StyledOtherServices>
           <StyledTxtCardCont>

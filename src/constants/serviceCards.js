@@ -11,7 +11,7 @@ import {
   CustomServiceIcon,
 } from '../assets/icons';
 
-const SERVICE_CARDS = [
+export const CARDS_HOME = [
   {
     id: uid(),
     icon: <DiagnosticIcon />,
@@ -54,4 +54,53 @@ const SERVICE_CARDS = [
   },
 ];
 
-export default SERVICE_CARDS;
+export const CARDS_SERVICE = [
+  {
+    id: uid(),
+    icon: <DiagnosticIcon />,
+    text: `${TEXTS.servicesPage.servicesSection.cards[0]}`,
+  },
+  {
+    id: uid(),
+    icon: <EngineIcon />,
+    text: `${TEXTS.servicesPage.servicesSection.cards[1]}`,
+  },
+  {
+    id: uid(),
+    icon: <BodyIcon />,
+    text: `${TEXTS.servicesPage.servicesSection.cards[2]}`,
+  },
+  {
+    id: uid(),
+    icon: <BatteryIcon />,
+    text: `${TEXTS.servicesPage.servicesSection.cards[3]}`,
+  },
+  {
+    id: uid(),
+    icon: <DiagnosticIcon />,
+    text: `${TEXTS.servicesPage.servicesSection.cards[4]}`,
+  },
+  {
+    id: uid(),
+    icon: <EngineIcon />,
+    text: `${TEXTS.servicesPage.servicesSection.cards[5]}`,
+  },
+];
+
+export const CARDS_SINGLE_SERVICE = [
+  {
+    id: uid(),
+    icon: <EngineIcon />,
+    text: `${TEXTS.homePage.cardsSection.cards.card2}`,
+  },
+  {
+    id: uid(),
+    icon: <DiagnosticIcon />,
+    text: `${TEXTS.homePage.cardsSection.cards.card1}`,
+  },
+  {
+    id: uid(),
+    icon: <BatteryIcon />,
+    text: `${TEXTS.homePage.cardsSection.cards.card6}`,
+  },
+];

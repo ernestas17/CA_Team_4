@@ -1,7 +1,7 @@
 import Card from '../../../../components/atoms/Card';
 import ArrowLink from '../../../../components/atoms/ArrowLink/ArrowLink';
 import NAV_LINKS from '../../../../constants/navLinks';
-import SERVICE_CARDS from '../../../../constants/serviceCards';
+import { CARDS_HOME } from '../../../../constants/serviceCards';
 import {
   StyledCardsSection,
   StyledCardsContainer,
@@ -15,7 +15,7 @@ const CardsSection = () => {
       <h6>{TEXTS.homePage.cardsSection.subHeading}</h6>
       <h2>{TEXTS.homePage.cardsSection.heading}</h2>
       <StyledCardsContainer>
-        {SERVICE_CARDS.map((card) => (
+        {CARDS_HOME.map((card) => (
           <Card key={card.id} icon={card.icon} text={card.text} />
         ))}
       </StyledCardsContainer>
