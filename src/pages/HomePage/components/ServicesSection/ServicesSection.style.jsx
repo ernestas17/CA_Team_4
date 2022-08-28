@@ -49,46 +49,6 @@ export const StyledContainerL = styled.div`
   }
 `;
 
-export const StyledServiceWrapper = styled.div`
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-  gap: 16px;
-
-  margin-bottom: 32px;
-`;
-export const StyledIconCircle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 47px;
-  width: 47px;
-  background-color: #fff;
-  border-radius: 50%;
-`;
-
-export const StyledServiceTxtWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 83%;
-
-  & h6 {
-    font-size: 24px;
-    line-height: 28px;
-
-    color: #1e1b1b;
-    margin-bottom: 6px;
-  }
-
-  p {
-    font-weight: 600;
-    color: #1e1b1b;
-    opacity: 0.6;
-    max-width: 322px;
-  }
-`;
-
 // Right container
 
 export const StyledContainerR = styled.div`
