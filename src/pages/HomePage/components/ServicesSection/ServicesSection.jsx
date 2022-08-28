@@ -4,6 +4,8 @@ import ArrowLink from '../../../../components/atoms/ArrowLink/ArrowLink';
 import Button from '../../../../components/atoms/Button/Button';
 import SERVICES from '../../../../constants/services';
 import ServiceCard from '../../../../components/atoms/ServiceCard';
+import { INPUTS } from '../../../../constants/inputs';
+import Input from '../../../../components/atoms/Input';
 import {
   StyledServicesSection,
   StyledContainerL,
@@ -29,23 +31,17 @@ const ServicesSection = () => {
       </StyledContainerL>
       <StyledContainerR>
         <h3>{TEXTS.homePage.servicesSection.form.title}</h3>
-        <form action='#'>
-          <input
-            type='text'
-            placeholder={TEXTS.homePage.servicesSection.form.paceholder}
-          />
-          <input
-            type='text'
-            placeholder={TEXTS.homePage.servicesSection.form.paceholder}
-          />
-          <input
-            type='text'
-            placeholder={TEXTS.homePage.servicesSection.form.paceholder}
-          />
-          <input
-            type='text'
-            placeholder={TEXTS.homePage.servicesSection.form.paceholder}
-          />
+        <form
+          onClick={(e) => {
+            e.preventDefault();
+          }}>
+          {INPUTS.map((input) => (
+            <Input
+              key={input.id}
+              placeholder={input.placeholder}
+              type={input.type}
+            />
+          ))}
         </form>
         <Button
           primary
