@@ -1,18 +1,13 @@
 import TEXTS from '../../../../constants/texts';
 import Button from '../../../../components/atoms/Button/Button';
-import line from '../../../../assets/icons/homePage/processSection/Line.svg';
 import NAV_LINKS from '../../../../constants/navLinks';
+import { PROCESS } from '../../../../constants/process';
+import ProcessCard from '../../../../components/atoms/ProcessCard/ProcessCard';
 import {
   StyledProcessSection,
   StyledContainerL,
   StyledContainerR,
-  StyledServiceWrapper,
-  StyledIconsBox,
-  StyledBigCircle,
-  StyledSmallCircle,
-  StyledLineBox,
-  StyledTextWrapper,
-} from './Process.style';
+} from './ProcessSection.style';
 
 const ProcessSection = () => {
   return (
@@ -27,52 +22,15 @@ const ProcessSection = () => {
         />
       </StyledContainerL>
       <StyledContainerR>
-        <StyledServiceWrapper>
-          <StyledIconsBox>
-            <StyledBigCircle>
-              <span>{TEXTS.homePage.processSection.step1.number}</span>
-              <StyledSmallCircle></StyledSmallCircle>
-            </StyledBigCircle>
-            <StyledLineBox>
-              <img src={line} alt='line' />
-            </StyledLineBox>
-          </StyledIconsBox>
-          <StyledTextWrapper>
-            <h5>{TEXTS.homePage.processSection.step1.title}</h5>
-            <p>{TEXTS.homePage.processSection.step1.text}</p>
-          </StyledTextWrapper>
-        </StyledServiceWrapper>
-
-        <StyledServiceWrapper>
-          <StyledIconsBox>
-            <StyledBigCircle>
-              <span>{TEXTS.homePage.processSection.step2.number}</span>
-              <StyledSmallCircle></StyledSmallCircle>
-            </StyledBigCircle>
-            <StyledLineBox>
-              <img src={line} alt='line' />
-            </StyledLineBox>
-          </StyledIconsBox>
-          <StyledTextWrapper>
-            <h5>{TEXTS.homePage.processSection.step2.title}</h5>
-            <p>{TEXTS.homePage.processSection.step2.text}</p>
-          </StyledTextWrapper>
-        </StyledServiceWrapper>
-        <StyledServiceWrapper>
-          <StyledIconsBox>
-            <StyledBigCircle>
-              <span>{TEXTS.homePage.processSection.step3.number}</span>
-              <StyledSmallCircle></StyledSmallCircle>
-            </StyledBigCircle>
-            <StyledLineBox>
-              <img src={line} alt='line' />
-            </StyledLineBox>
-          </StyledIconsBox>
-          <StyledTextWrapper>
-            <h5>{TEXTS.homePage.processSection.step3.title}</h5>
-            <p>{TEXTS.homePage.processSection.step3.text}</p>
-          </StyledTextWrapper>
-        </StyledServiceWrapper>
+        {PROCESS.map((process, index) => (
+          <ProcessCard
+            key={index}
+            index={index + 1}
+            title={process.title}
+            text={process.text}
+            line={index !== PROCESS.length - 1}
+          />
+        ))}
       </StyledContainerR>
     </StyledProcessSection>
   );
