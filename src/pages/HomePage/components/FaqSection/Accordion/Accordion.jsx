@@ -1,7 +1,5 @@
 import React from 'react';
-import plusIcon from '../../../../../assets/icons/homePage/faqSection/Plus.svg';
-import minusIcon from '../../../../../assets/icons/homePage/faqSection/Minus.svg';
-
+import { MinusIcon, PlusIcon } from '../../../../../assets/icons';
 import { useState } from 'react';
 
 import {
@@ -21,13 +19,7 @@ const Accordion = ({ title, content }) => {
           expanded={!isActive}
           onClick={() => setIsActive(!isActive)}>
           <h6>{title}</h6>
-          <div>
-            {isActive ? (
-              <img src={minusIcon} alt={'minus'} />
-            ) : (
-              <img src={plusIcon} alt={'plus'} />
-            )}
-          </div>
+          <div>{isActive ? <MinusIcon /> : <PlusIcon />}</div>
         </StyledAccordionTitle>
         {isActive && (
           <StyledAccordionContent>
