@@ -3,10 +3,6 @@ import styled from 'styled-components';
 export const StyledSingleServicePage = styled.main`
   max-width: 1920px;
 
-  /* display: flex;
-  flex-direction: column;
-  margin: 0 auto; */
-
   & h1 {
     text-align: center;
     max-width: 1300px;
@@ -15,7 +11,6 @@ export const StyledSingleServicePage = styled.main`
     line-height: 84px;
     letter-spacing: -0.03em;
     color: #1e1b1b;
-    /* margin-bottom: 96px; */
     margin: 0 auto 96px auto;
 
     @media screen and (min-width: 1400px) {
