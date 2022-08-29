@@ -8,7 +8,7 @@ export const StyledSliderBtn = styled.button`
   height: 48px;
   border: none;
   border-radius: 50%;
-  background: #fff;
+  background: ${({ theme }) => theme.color.white};
   transition: all 0.2s;
   cursor: pointer;
 
@@ -17,10 +17,10 @@ export const StyledSliderBtn = styled.button`
   }
 
   &:hover {
-    background: #1e1b1b;
+    background: ${({ theme }) => theme.color.black};
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     scale: calc(1.335);
 
-    color: #fff;
+    color: ${({ theme }) => theme.color.white};
   }
 `;

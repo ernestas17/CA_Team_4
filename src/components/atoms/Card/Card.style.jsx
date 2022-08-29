@@ -1,19 +1,24 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../constants/breakpoints';
 
 export const StyledCard = styled.div`
-  width: ${({ customWidth }) => (customWidth ? customWidth : '316px')};
-  height: ${({ customHeight }) => (customHeight ? customHeight : '232px')};
-  color: #1e1b1b;
+  width: ${({ customWidth }) => (customWidth ? customWidth : '100%')};
+  height: ${({ customHeight }) => (customHeight ? customHeight : '150px')};
+  color: ${({ theme }) => theme.color.black};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.color.white};
   cursor: pointer;
 
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    height: ${({ customHeight }) => (customHeight ? customHeight : '232px')};
+  }
+
   &:hover {
-    background: #ff6433;
-    color: #fff;
+    background: ${({ theme }) => theme.color.orange};
+    color: ${({ theme }) => theme.color.white};
 
     & img {
       filter: invert(99%) sepia(21%) saturate(2%) hue-rotate(169deg)
@@ -23,11 +28,7 @@ export const StyledCard = styled.div`
 `;
 
 export const StyledCardText = styled.p`
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  ${({ theme }) => theme.title2};
   text-align: center;
-  letter-spacing: -0.03em;
   margin-top: 16px;
 `;
