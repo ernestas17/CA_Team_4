@@ -1,45 +1,42 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../constants/breakpoints';
 
 export const StyledBrandsSection = styled.section`
   width: 100vw - (100vw - 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 64px 20px;
 
-  padding: 128px 10px;
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding: 64px 40px;
+  }
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding: 128px 40px;
+  }
 
   & h3 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 140%;
+    ${({ theme }) => theme.h3}
     text-align: center;
-    letter-spacing: -0.03em;
-    color: #1e1b1b;
+    color: ${({ theme }) => theme.color.black};
     margin-bottom: 41px;
+  }
+
+  & svg {
+    color: ${({ theme }) => theme.color.black};
+    width: 150px;
+    height: auto;
+
+    @media screen and (min-width: ${BREAKPOINTS.md}) {
+      width: 226px;
+    }
   }
 `;
 
-export const StyledLogosContainerTop = styled.div`
+export const StyledLogosContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1280px;
-
-  @media screen and (min-width: 1280px) {
-    justify-content: space-between;
-  }
-`;
-
-export const StyledLogosContainerBottom = styled.div`
-  width: 100%;
-  max-width: 1280px;
-  display: flex;
-
-  display: none;
-
-  @media screen and (min-width: 1280px) {
-    display: flex;
-    justify-content: space-between;
-  }
+  max-width: 1300px;
 `;
