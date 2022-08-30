@@ -1,8 +1,8 @@
 import TEXTS from '../../../../constants/texts';
 import user1 from '../../../../assets/images/homePage/reviewsSection/user1.jpg';
 import user2 from '../../../../assets/images/homePage/reviewsSection/user2.jpg';
-import ReviewCard from './ReviewCard';
-import SliderBtn from './SliderBtn';
+import ReviewCard from './ReviewCard/ReviewCard';
+import SliderBtn from './SliderBtn/SliderBtn';
 import {
   StyledRewiewSection,
   StyledCardsContainer,

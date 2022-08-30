@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../../../constants/breakpoints';
 
 export const StyledServicesSection = styled.section`
-  padding: 128px 10px;
+  padding: 64px 20px;
   background-color: ${({ theme }) => theme.color.lightGrey2};
 
   display: flex;
@@ -10,10 +10,13 @@ export const StyledServicesSection = styled.section`
   align-items: center;
   gap: 32px;
 
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding: 128px 0;
+  }
+
   @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     flex-direction: row;
     justify-content: center;
-    padding: 128px 0;
   }
 `;
 

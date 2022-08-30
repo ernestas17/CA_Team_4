@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../constants/breakpoints';
 
 export const StyledImgAndCard = styled.div`
   display: flex;
@@ -24,42 +25,35 @@ export const StyledImg = styled.div`
 `;
 
 export const StyledTextBox = styled.div`
-  background-color: #1e1b1b;
+  background-color: ${({ theme }) => theme.color.black};
   padding: 96px;
   height: 100%;
 
-  padding: 40px 10px;
+  padding: 40px 20px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 100;
 
-  @media screen and (min-width: 466px) {
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
     padding: 96px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: ${BREAKPOINTS.xl}) {
     top: 0;
     left: 70%;
   }
 
   & h1 {
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 84px;
-
-    letter-spacing: -0.03em;
-    color: #f2f2f2;
-
+    ${({ theme }) => theme.h1};
+    color: ${({ theme }) => theme.color.white};
     margin-bottom: 16px;
   }
 
   & p {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 175%;
-    color: #f2f2f2;
+    ${({ theme }) => theme.body1}
+    color: ${({ theme }) => theme.color.lightGrey};
     max-width: 541px;
     margin-bottom: 48px;
   }
