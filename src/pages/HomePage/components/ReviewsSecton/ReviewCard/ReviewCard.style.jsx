@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BREAKPOINTS from '../../../../constants/breakpoints';
+import BREAKPOINTS from '../../../../../constants/breakpoints';
 
 export const StyledCard = styled.div`
   max-width: 616px;
