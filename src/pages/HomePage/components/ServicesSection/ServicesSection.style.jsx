@@ -49,6 +49,12 @@ export const StyledContainerL = styled.div`
   }
 `;
 
+export const StyledCardsCont = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+`;
 // Right container
 
 export const StyledContainerR = styled.div`
