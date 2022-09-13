@@ -1,4 +1,4 @@
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 // Constants imports
 import NAV_LINKS from './constants/navLinks';
 // Assets imports
@@ -21,14 +21,16 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Header />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<AboutUsPage />} />
-          <Route path='/services' element={<ServicesPage />} />
-          <Route path='/services/service' element={<SingleServicePage />} />
-          <Route path='/blog' element={<BlogPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-        </Routes>
+        <Suspense fallback={<p>Loading...</p>}>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/about' element={<AboutUsPage />} />
+            <Route path='/services' element={<ServicesPage />} />
+            <Route path='/services/service' element={<SingleServicePage />} />
+            <Route path='/blog' element={<BlogPage />} />
+            <Route path='/contact' element={<ContactPage />} />
+          </Routes>
+        </Suspense>
         <Footer navLinks={NAV_LINKS} />
       </ThemeProvider>
     </>
