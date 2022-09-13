@@ -1,4 +1,3 @@
-import { LineIcon } from '../../../assets/icons';
 import {
   StyledProcessCard,
   StyledIconsBox,
@@ -6,19 +5,22 @@ import {
   StyledSmallCircle,
   StyledLineBox,
   StyledTextWrapper,
+  StyledLine,
 } from './ProcessCard.style';
 
-const ProcessCard = ({ index, title, text, line }) => {
+const ProcessCard = ({ index, title, text, line, lineLength, pWidth }) => {
   return (
     <StyledProcessCard>
       <StyledIconsBox>
         <StyledBigCircle>
           <span>{index <= 9 ? '0' + index : index}</span>
-          <StyledSmallCircle></StyledSmallCircle>
+          <StyledSmallCircle />
         </StyledBigCircle>
-        <StyledLineBox>{line && <LineIcon />}</StyledLineBox>
+        <StyledLineBox lineLength={lineLength}>
+          {line && <StyledLine />}
+        </StyledLineBox>
       </StyledIconsBox>
-      <StyledTextWrapper>
+      <StyledTextWrapper pWidth={pWidth}>
         <h5>{title}</h5>
         <p>{text}</p>
       </StyledTextWrapper>

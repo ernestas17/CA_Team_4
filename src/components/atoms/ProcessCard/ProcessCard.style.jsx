@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const StyledProcessCard = styled.div`
   width: 100%;
-
   display: flex;
   gap: 24px;
   align-items: baseline;
@@ -44,27 +43,30 @@ export const StyledSmallCircle = styled.div`
 `;
 
 export const StyledLineBox = styled.div`
-  height: 71px;
+  height: ${(props) => props.lineLength || '71px'};
   z-index: 100;
   margin-top: 15px;
+`;
 
-  & svg {
-    color: ${({ theme }) => theme.color.orange};
-  }
+export const StyledLine = styled.div`
+  border-left: 2px dashed #ff6433;
+  height: 100%;
 `;
 
 export const StyledTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   & h5 {
-    ${({ theme }) => theme.h5}
+    ${({ theme }) => theme.h5};
     margin-bottom: 8px;
   }
 
   & p {
-    ${({ theme }) => theme.body1}
-    max-width: 336px;
+    ${({ theme }) => theme.body1};
+    width: 100%;
+    max-width: ${(props) => props.pWidth || '336px'};
     color: ${({ theme }) => theme.color.black};
     opacity: 0.6;
   }
