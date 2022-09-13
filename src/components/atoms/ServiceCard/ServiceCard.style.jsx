@@ -5,8 +5,6 @@ export const StyledServiceCard = styled.div`
   align-items: baseline;
   width: 100%;
   gap: 16px;
-
-  margin-bottom: 32px;
 `;
 export const StyledIconCircle = styled.div`
   display: flex;

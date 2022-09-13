@@ -6,15 +6,18 @@ export const StyledHeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 100%;
   height: 1000px;
   padding: 40px;
 
+  max-width: 1300px;
+  margin: 0 auto;
+
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
     max-height: 802px;
-    justify-content: center;
-    gap: 51px;
+    justify-content: space-between;
     padding: 80px 40px;
   }
 `;
@@ -22,19 +25,20 @@ export const StyledHeroSection = styled.section`
 export const StyledContainerOne = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   width: 100%;
   max-width: 623px;
   height: fit-content;
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    width: 45%;
+    width: 50%;
     max-height: 632px;
   }
 
   & h1 {
     ${({ theme }) => theme.h1}
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
 `;
 
@@ -73,8 +77,12 @@ export const StyledContainerTwo = styled.div`
   max-height: 632px;
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    width: 45%;
     max-height: 632px;
+    width: 45%;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
+    width: 50%;
   }
 `;
 

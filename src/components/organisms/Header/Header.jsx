@@ -14,7 +14,6 @@ import {
   StyledCircle,
   StyledPhoneBox,
 } from './Header.styled';
-// import { useLocation } from 'react-router-dom';
 
 const Header = () => {
   // State
@@ -30,7 +29,7 @@ const Header = () => {
 
     window.addEventListener('resize', handleResize);
 
-    return (_) => {
+    return () => {
       window.removeEventListener('resize', handleResize);
     };
   });
@@ -39,23 +38,19 @@ const Header = () => {
     dimensions < 950 ? setDisplayNav(false) : setDisplayNav(true);
   }, [dimensions]);
 
-  // const { pathname } = useLocation();
-
-  // useEffect(() => {
-  //   setDisplayNav(false);
-  // }, [pathname]);
-
   return (
     <StyledHeader>
       <StyledMobileWrapper>
         <Link to={'/'}>
           <LogoIcon />
         </Link>
-        <NavIcon
-          onClick={() => {
-            setDisplayNav(!displayNav);
-          }}
-        />
+        {!displayNav && (
+          <NavIcon
+            onClick={() => {
+              setDisplayNav(!displayNav);
+            }}
+          />
+        )}
       </StyledMobileWrapper>
       {displayNav && <Navigation navLinks={links} />}
       {displayNav &&
