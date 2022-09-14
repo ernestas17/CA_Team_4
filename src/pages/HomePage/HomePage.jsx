@@ -19,7 +19,7 @@ const HomePage = () => {
       <ProcessSection />
       <CardsSection />
       <CallToAction />
-      <ExperienceSection />
+      <ExperienceSection background={'#F2F2F2'} />
       <BrandsSection />
       <ReviewsSection />
       <FaqSection />
