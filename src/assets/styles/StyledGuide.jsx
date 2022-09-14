@@ -165,6 +165,7 @@ export const theme = {
 
   color: {
     darkBlack: '#000000',
+    lightBlack: '#161616',
     black: '#1E1B1B',
     darkBlue: '#232536',
     lightOrange: '#ffdace',
