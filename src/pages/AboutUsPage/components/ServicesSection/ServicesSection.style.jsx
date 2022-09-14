@@ -10,17 +10,17 @@ export const StyledServicesSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 20px;
+  padding: 64px 20px 18px 20px;
 
   @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 64px 40px;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.lg}) {
-    padding: 128px 40px;
+    padding: 128px 40px 80px 40px;
   }
 
-  & h2 {
+  & > h2 {
     ${({ theme }) => theme.h2};
     text-align: center;
     max-width: 861px;
