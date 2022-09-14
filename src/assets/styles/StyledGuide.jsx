@@ -179,6 +179,7 @@ export const theme = {
     lighterGrey: '#ebebeb',
     lightGrey: '#F2F2F2',
     lightGrey2: '#F5F5F5',
+    lightGrey3: '#F8F8F8',
     white: '#ffffff',
   },
 };
