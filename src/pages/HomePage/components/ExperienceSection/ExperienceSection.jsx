@@ -5,9 +5,9 @@ import {
   StyledExperience,
 } from './ExperienceSection.style';
 
-const ExperienceSection = () => {
+const ExperienceSection = ({ background }) => {
   return (
-    <StyledExperienceSection>
+    <StyledExperienceSection background={background}>
       <StyledWrapper>
         {EXPERIENCE.map((experience) => (
           <StyledExperience key={experience.id}>

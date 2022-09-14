@@ -18,7 +18,7 @@ export const StyledProcessSection = styled.section`
 
   margin: 0 auto;
 
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
     padding: 0px 40px 64px 40px;
     gap: 131px;
   }
@@ -27,7 +27,9 @@ export const StyledProcessSection = styled.section`
     flex-direction: row;
     gap: 87px;
     align-items: flex-start;
+  }
 
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     padding: 0px 0px 128px 0px;
   }
 `;

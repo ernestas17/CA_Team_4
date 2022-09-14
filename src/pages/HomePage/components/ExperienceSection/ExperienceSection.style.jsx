@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import BREAKPOINTS from '../../../../constants/breakpoints';
 
 export const StyledExperienceSection = styled.section`
-  background: ${({ theme }) => theme.color.lightGrey};
+  background: ${(props) =>
+    props.background ? props.background : 'transparent'};
   padding: 48px 20px;
   display: flex;
   justify-content: center;
@@ -19,19 +20,25 @@ export const StyledWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   justify-content: center;
 
-  column-gap: 100px;
+  column-gap: 50px;
   row-gap: 50px;
 
-  @media screen and (min-width: ${BREAKPOINTS.md}) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.xl}) {
+    column-gap: auto;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     column-gap: 190px;
   }
 `;
 
 export const StyledExperience = styled.div`
+  justify-self: center;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -46,5 +53,7 @@ export const StyledExperience = styled.div`
     ${({ theme }) => theme.title2};
     color: ${({ theme }) => theme.color.black};
     opacity: 0.7;
+    display: inline-block;
+    white-space: nowrap;
   }
 `;
