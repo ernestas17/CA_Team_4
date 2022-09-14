@@ -193,31 +193,29 @@ const TEXTS = {
           'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
       },
     },
-    teamHeader: {
-      heading: 'Meet our Team',
-    },
     team: {
-      memberOne: {
+      heading: 'Meet our Team',
+      member1: {
         name: 'Javena Melo',
         position: 'Founder, Director',
       },
-      memberTwo: {
+      member2: {
         name: 'Paul Honson',
         position: 'Head Technician',
       },
-      memberThree: {
+      member3: {
         name: 'Devon Lane',
         position: 'Technician',
       },
-      memberFour: {
+      member4: {
         name: 'Jalen Davies',
         position: 'Marketing Manager',
       },
-      memberFive: {
+      member5: {
         name: 'Kylee Danford',
         position: 'Sales Manager',
       },
-      memberSix: {
+      member6: {
         name: 'Luisa Wilson',
         position: 'Support Assistant',
       },
