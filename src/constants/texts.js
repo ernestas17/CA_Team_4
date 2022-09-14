@@ -175,19 +175,19 @@ const TEXTS = {
       },
     },
 
-    service: {
+    servicesSection: {
       header: 'Services we provide to our valued customers',
-      convenient: {
+      card1: {
         title: 'Convenient Service',
         description:
           'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
       },
-      expert: {
+      card2: {
         title: 'Expert Mechanics',
         description:
           'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
       },
-      transparent: {
+      card3: {
         title: 'Transparent Pricing',
         description:
           'Through True Rich Attended does no end it his mother since real had half every him end it his mother',
