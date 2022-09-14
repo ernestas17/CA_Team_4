@@ -1,20 +1,23 @@
 import styled from 'styled-components';
-
-import serviceImg from '../../../../assets/images/homePage/heroSection/home-s1-img.jpg';
+import BREAKPOINTS from '../../../../constants/breakpoints';
+import mechanicImg from '../../../../assets/images/homePage/heroSection/home-s1-img.jpg';
 
 export const StyledHeroSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   width: 100%;
   height: 1000px;
   padding: 40px;
 
-  @media screen and (min-width: 950px) {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
     max-height: 802px;
-    justify-content: center;
-    gap: 51px;
+    justify-content: space-between;
     padding: 80px 40px;
   }
 `;
@@ -22,25 +25,20 @@ export const StyledHeroSection = styled.section`
 export const StyledContainerOne = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   width: 100%;
-  max-width: 624px;
+  max-width: 623px;
   height: fit-content;
 
-  @media screen and (min-width: 950px) {
-    width: 45%;
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    width: 50%;
     max-height: 632px;
   }
 
   & h1 {
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 48px;
-
-    @media screen and (min-width: 820px) {
-      font-size: 64px;
-      line-height: 84px;
-    }
+    ${({ theme }) => theme.h1}
+    margin-bottom: 32px;
   }
 `;
 
@@ -49,20 +47,19 @@ export const StyledOpenHContainer = styled.div`
   gap: 13px;
   margin-top: 48px;
   margin-bottom: 48px;
+
+  & svg {
+    color: ${({ theme }) => theme.color.grey};
+  }
 `;
 
 export const StyledTitle = styled.div`
-  font-weight: 500;
-  line-height: 24px;
-  color: #939191;
+  ${({ theme }) => theme.caption}
+  color:  ${({ theme }) => theme.color.darkGrey}
 `;
 
 export const StyledOpenHours = styled.div`
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  color: #1e1b1b;
-  line-height: 31.5px;
+  ${({ theme }) => theme.body1}
 `;
 
 // Container 2
@@ -79,9 +76,13 @@ export const StyledContainerTwo = styled.div`
 
   max-height: 632px;
 
-  @media screen and (min-width: 950px) {
-    width: 45%;
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     max-height: 632px;
+    width: 45%;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
+    width: 50%;
   }
 `;
 
@@ -89,7 +90,7 @@ export const StyledImageContainer = styled.div`
   width: 100%;
   height: 100%;
 
-  background-image: url(${serviceImg});
+  background-image: url(${mechanicImg});
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +99,7 @@ export const StyledImageContainer = styled.div`
 
 export const StyledStickerBorderTop = styled.div`
   position: absolute;
-  top: 81px;
+  top: 61px;
   left: -42px;
   height: calc(102px + 24px);
   width: calc(281.64px + 24px);
@@ -110,7 +111,11 @@ export const StyledStickerBorderTop = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
+    top: 81px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     margin-left: 0px;
   }
 `;
@@ -119,7 +124,7 @@ export const StyledStickerTop = styled.div`
   height: 102px;
   width: 281.64px;
   border-radius: 57px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.color.white};
   padding: 15px;
 
   display: flex;
@@ -127,15 +132,14 @@ export const StyledStickerTop = styled.div`
   gap: 14.4px;
 
   & p {
-    font-size: 24px;
-    font-weight: 600;
+    ${({ theme }) => theme.title2};
   }
 `;
 
 export const StyledStickerCircle = styled.div`
   height: 70px;
   width: 70px;
-  background-color: #5cba99;
+  background-color: ${({ theme }) => theme.color.darkGreen};
   border-radius: 50%;
 
   display: flex;
@@ -144,9 +148,8 @@ export const StyledStickerCircle = styled.div`
 
   & p {
     font-size: 24px;
-    font-weight: 600;
-    line-height: 36px;
-    color: #fff;
+    ${({ theme }) => theme.title2};
+    color: ${({ theme }) => theme.color.white};
 
     & span {
       font-size: 16px;
@@ -156,7 +159,7 @@ export const StyledStickerCircle = styled.div`
 
 export const StyledStickerBorderBottom = styled.div`
   position: absolute;
-  bottom: 81px;
+  bottom: 61px;
   right: -42px;
   height: calc(102px + 24px);
   width: calc(326px + 24px);
@@ -167,13 +170,17 @@ export const StyledStickerBorderBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: ${BREAKPOINTS.sm}) {
+    bottom: 81px;
+  }
 `;
 
 export const StyledStickerBotom = styled.div`
   height: 102px;
   width: 326px;
   border-radius: 57px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.color.white};
   padding-left: 38px;
 
   display: flex;
@@ -186,7 +193,7 @@ export const StyledRatingBox = styled.div`
   flex-direction: column;
 
   & p {
-    font-weight: 500;
+    ${({ theme }) => theme.caption};
   }
 `;
 
@@ -199,25 +206,19 @@ export const StyledStarsContainer = styled.div`
   & ul {
     display: flex;
     gap: 6px;
+
+    & li {
+      list-style: none;
+
+      & svg {
+        color: ${({ theme }) => theme.color.yellow};
+      }
+    }
+
+    & li:last-of-type {
+      svg {
+        color: ${({ theme }) => theme.color.grey2};
+      }
+    }
   }
-
-  li {
-    list-style: none;
-  }
 `;
-
-// Section 2
-export const StyledSectionTwo = styled.section`
-  display: flex;
-  flex-direction: column;
-
-  background-color: #e2e6e9;
-  height: fit-content;
-  padding: 128px 10px;
-`;
-
-export const StyledContainerL = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-export const StyledContainerR = styled.div``;

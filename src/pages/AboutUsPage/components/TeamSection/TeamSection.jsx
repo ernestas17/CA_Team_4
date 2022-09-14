@@ -1,13 +1,22 @@
-import React from 'react';
-import { StyledTeamSection, StyledTeamHeading } from './TeamSection.style';
-import TEXT from '../../../../constants/texts';
+import TEXTS from '../../../../constants/texts';
+import { TEAM } from '../../../../constants/teamMembers';
+import TeamMember from './TeamMember/TeamMember';
+import { StyledTeamSection } from './TeamSection.style';
 
 const TeamSection = () => {
   return (
     <StyledTeamSection>
-      <StyledTeamHeading>
-        {TEXT.aboutUsPage.teamHeader.heading}
-      </StyledTeamHeading>
+      <h1>{TEXTS.aboutUsPage.team.heading}</h1>
+      <div>
+        {TEAM.map((member) => (
+          <TeamMember
+            key={member.id}
+            img={member.image}
+            name={member.name}
+            specialty={member.specialty}
+          />
+        ))}
+      </div>
     </StyledTeamSection>
   );
 };

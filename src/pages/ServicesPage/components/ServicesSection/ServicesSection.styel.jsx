@@ -1,49 +1,47 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../constants/breakpoints';
 
 export const StyledServicesSection = styled.section`
-  padding: 128px 10px;
-  background-color: #f5f5f5;
+  padding: 64px 20px;
+  background-color: ${({ theme }) => theme.color.lightGrey2};
 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    padding: 128px 0;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.xxl}) {
     flex-direction: row;
     justify-content: center;
-    padding: 128px 0;
   }
 `;
 
 export const StyledContL = styled.div`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.color.white};
   display: flex;
   flex-direction: column;
   padding: 64px 20px 43px 20px;
   width: 100%;
   max-width: 624px;
 
-  @media screen and (min-width: 820px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 64px 48px 43px 48px;
   }
 
   h3 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 140%;
-    letter-spacing: -0.03em;
-    color: #1e1b1b;
+    ${({ theme }) => theme.h3};
+    color: ${({ theme }) => theme.color.black};
     margin-top: 32px;
     margin-bottom: 16px;
   }
 
   p {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.03em;
-    color: #232536;
+    ${({ theme }) => theme.title2};
+    color: ${({ theme }) => theme.color.darkBlue};
     opacity: 0.6;
     margin-bottom: 32px;
   }
@@ -51,10 +49,12 @@ export const StyledContL = styled.div`
 
 export const StyledContR = styled.div`
   display: grid;
-  gap: 32px;
-  grid-template-columns: 1fr;
+  gap: 8px;
+  width: 100%;
+  max-width: 624px;
+  grid-template-columns: 1fr 1fr;
 
-  @media screen and (min-width: 820px) {
-    grid-template-columns: 1fr 1fr;
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
+    gap: 32px;
   }
 `;

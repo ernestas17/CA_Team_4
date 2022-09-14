@@ -1,19 +1,17 @@
-import React from 'react';
-import ObjectivesCard from '../ObjectivesCard/ObjectivesCard';
-import OBJECTIVES from '../../../../constants/objectives';
-
 import { StyledObjectivesSection } from './ObjectivesSection.style';
+import ObjectiveCard from '../../../../components/atoms/ObjectiveCard';
+import OBJECTIVES from '../../../../constants/objectives';
 
 const ObjectivesSection = () => {
   return (
     <StyledObjectivesSection>
       {OBJECTIVES.map((objective) => (
-        <ObjectivesCard
+        <ObjectiveCard
           key={objective.id}
-          image={objective.img}
-          color={objective.color}
+          img={objective.img}
+          overlay={objective.overlay}
           title={objective.title}
-          description={objective.desc}
+          content={objective.desc}
         />
       ))}
     </StyledObjectivesSection>

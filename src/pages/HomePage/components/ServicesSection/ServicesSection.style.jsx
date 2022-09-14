@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../constants/breakpoints';
 
 export const StyledServicesSection = styled.section`
   display: flex;
@@ -9,18 +10,18 @@ export const StyledServicesSection = styled.section`
   align-items: center;
   gap: 72px;
 
-  background-color: #e2e6e9;
+  background-color: ${({ theme }) => theme.color.grey};
   height: fit-content;
-  padding: 128px 10px;
+  padding: 64px 20px;
 
   max-width: 1922px;
   margin: 0 auto;
 
-  @media screen and (min-width: 820px) {
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
     padding: 128px 40px;
   }
 
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: ${BREAKPOINTS.lg}) {
     flex-direction: row;
     align-items: flex-start;
   }
@@ -33,11 +34,10 @@ export const StyledContainerL = styled.div`
   max-width: 584px;
 
   & h2 {
-    font-size: 58px;
-    font-weight: 800;
+    ${({ theme }) => theme.h2}
     line-height: 76px;
-    color: #1e1b1b;
-    -webkit-text-stroke: 2px #000;
+    color: ${({ theme }) => theme.color.black};
+    -webkit-text-stroke: 2px ${({ theme }) => theme.color.darkBlack};
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     max-width: 583px;
@@ -49,46 +49,12 @@ export const StyledContainerL = styled.div`
   }
 `;
 
-export const StyledServiceWrapper = styled.div`
-  display: flex;
-  align-items: baseline;
-  width: 100%;
-  gap: 16px;
-
-  margin-bottom: 32px;
-`;
-export const StyledIconCircle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: 47px;
-  width: 47px;
-  background-color: #fff;
-  border-radius: 50%;
-`;
-
-export const StyledServiceTxtWrapper = styled.div`
+export const StyledCardsCont = styled.div`
   display: flex;
   flex-direction: column;
-  width: 83%;
-
-  & h6 {
-    font-size: 24px;
-    line-height: 28px;
-
-    color: #1e1b1b;
-    margin-bottom: 6px;
-  }
-
-  p {
-    font-weight: 600;
-    color: #1e1b1b;
-    opacity: 0.6;
-    max-width: 322px;
-  }
+  gap: 32px;
+  margin-bottom: 32px;
 `;
-
 // Right container
 
 export const StyledContainerR = styled.div`
@@ -103,26 +69,10 @@ export const StyledContainerR = styled.div`
     flex-direction: column;
     gap: 4px;
     margin-bottom: 32px;
-
-    & ::placeholder {
-      line-height: 28px;
-      font-weight: 600;
-      font-size: 16px;
-      color: #1e1b1b;
-      opacity: 0.5;
-    }
   }
 
   & h3 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 67.2px;
+    ${({ theme }) => theme.h3}
     margin-bottom: 32px;
-  }
-
-  & input {
-    width: 100%;
-    padding: 22.91px 40.33px;
-    border: none;
   }
 `;
