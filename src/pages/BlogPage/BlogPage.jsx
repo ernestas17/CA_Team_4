@@ -1,7 +1,12 @@
-import React from 'react';
+import OurBlogSection from './components/OurBlogSection/OurBlogSection';
+import { StyledBlogPage } from './BlogPage.style';
 
 const BlogPage = () => {
-  return <h2>BlogPage</h2>;
+  return (
+    <StyledBlogPage>
+      <OurBlogSection />
+    </StyledBlogPage>
+  );
 };
 
 export default BlogPage;
