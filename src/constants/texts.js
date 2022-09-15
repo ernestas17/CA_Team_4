@@ -222,6 +222,78 @@ const TEXTS = {
     },
   },
 
+  blogPage: {
+    ourBlogSection: {
+      heading: 'Our Blog',
+      subtitle: 'TRENDING',
+      title: 'Diagnose Car Problems If You Don’t Know Much About Cars',
+      content:
+        'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      btnTxt: 'Read more',
+      date: 'Posted on October 6th 2021',
+    },
+    postsSection: {
+      largePost: {
+        date: 'Posted on October 6th 2021',
+        title: 'Should I Buy a New Car or Lease a New Car in 2021?',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+        btnTxt: 'Read more',
+      },
+      posts: {
+        post1: {
+          title: 'Get an Awesome Number Plate for Your New Car',
+          date: 'Posted on October 6th 2021',
+        },
+        post2: {
+          title: 'Would you Let a Robot Drive your Car? Our AI Future',
+        },
+        post3: {
+          title: 'Will Electric Technology Soon Rule The Road?',
+          date: 'Posted on October 6th 2021',
+        },
+      },
+    },
+
+    articlesSection: {
+      article1: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article2: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article3: {
+        date: 'Posted on October 6th 2021',
+        title: 'We provide blow straight past it with the wheels skidding',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article4: {
+        date: 'Posted on October 6th 2021',
+        title: 'We provide blow straight past it with the wheels skidding',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article5: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article6: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+    },
+  },
   servicesPage: {
     bookingSection: {
       title: 'Our services',
