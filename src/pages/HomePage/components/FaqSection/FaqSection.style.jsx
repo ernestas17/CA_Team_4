@@ -1,19 +1,25 @@
 import styled from 'styled-components';
+import BREAKPOINTS from '../../../../constants/breakpoints';
 
 export const StyledFaqSection = styled.section`
-  background: #e2e6e9;
-  padding: 128px 10px;
+  background: ${({ theme }) => theme.color.grey};
+  padding: 64px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding: 64px 40px;
+  }
+
+  @media screen and (min-width: ${BREAKPOINTS.md}) {
+    padding: 128px 40px;
+  }
+
   & h3 {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 140%;
+    ${({ theme }) => theme.h3};
     text-align: center;
-    letter-spacing: -0.03em;
-    color: #1e1b1b;
+    color: ${({ theme }) => theme.color.black};
     margin-bottom: 95px;
   }
 `;

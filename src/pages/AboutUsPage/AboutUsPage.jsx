@@ -1,18 +1,18 @@
-import CallToAction from '../../components/CallToAction';
-import FooterContacts from '../../components/FooterContacts';
-import ServiceAndExperienceSection from './components/ServiceAndExperienceSection/ServiceAndExperienceSection';
-import TeamSection from './components/TeamSection/TeamSection';
-
 import { StyledAboutUsPage } from './AboutUsPage.style';
-import ObjectivesSection from './components/ObjectivesSection/ObjectivesSection';
-import CustomerJourneySection from './components/CustomerJourneySection/CustomerJourneySection';
-
+import BookingSection from './components/BookingSection/BookingSection';
+import ProcessSection from './components/ProcessSection/ProcessSection';
+import ObjectivesSection from './components/ObjectivesSection';
+import ServicesSection from './components/ServicesSection';
+import TeamSection from './components/TeamSection';
+import CallToAction from '../../components/organisms/CallToAction';
+import FooterContacts from '../../components/organisms/FooterContacts';
 const AboutUsPage = () => {
   return (
     <StyledAboutUsPage>
-      <CustomerJourneySection />
+      <BookingSection />
+      <ProcessSection />
       <ObjectivesSection />
-      <ServiceAndExperienceSection />
+      <ServicesSection />
       <TeamSection />
       <CallToAction />
       <FooterContacts />
