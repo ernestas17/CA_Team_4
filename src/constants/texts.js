@@ -247,6 +247,7 @@ const TEXTS = {
         },
         post2: {
           title: 'Would you Let a Robot Drive your Car? Our AI Future',
+          date: 'Posted on October 6th 2021',
         },
         post3: {
           title: 'Will Electric Technology Soon Rule The Road?',
