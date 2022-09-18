@@ -25,7 +25,9 @@ export const StyledPostSm = styled.div`
     padding: 32px 0px 16px 0px;
 
     & a {
-      ${({ theme }) => theme.title1};
+      & h5 {
+        ${({ theme }) => theme.title1};
+      }
     }
 
     & p:last-of-type {
