@@ -7,7 +7,7 @@ const PostSm = ({ img, title, path, date }) => {
       <Link to={path}></Link>
       <div></div>
       <div>
-        <Link to={path}>{title}</Link>
+        <Link to={path}><h5>{title}</h5></Link>
         <p>{date}</p>
       </div>
     </StyledPostSm>
