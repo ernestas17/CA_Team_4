@@ -22,9 +22,6 @@ export const StyledPostsSection = styled.section`
     justify-content: center;
     align-items: flex-start;
   }
-
-  @media screen and (min-width: ${BREAKPOINTS.xl}) {
-  }
 `;
 
 export const StyledPostsCont = styled.div`
