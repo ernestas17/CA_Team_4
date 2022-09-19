@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const StyledTeamMember = styled.div`
   background-image: url(${(props) => props.img});
-  background-position: center top;
-  background-repeat: no-repeat;
-
+  background-position: center;
+  background-size: cover;
   justify-self: center;
 
   height: 100%;

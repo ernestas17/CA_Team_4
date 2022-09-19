@@ -38,9 +38,6 @@ export const StyledTeamSection = styled.section`
     @media screen and (min-width: ${BREAKPOINTS.lg}) {
       grid-template-columns: 1fr 1fr 1fr;
       height: 900px;
-    }
-
-    @media screen and (min-width: ${BREAKPOINTS.xl}) {
       grid-row-gap: 48px;
     }
   }

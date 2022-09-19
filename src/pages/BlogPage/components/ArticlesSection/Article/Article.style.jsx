@@ -9,9 +9,8 @@ export const StyledArticle = styled.div`
 
   & div {
     background-image: url(${(props) => props.img});
-    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     width: 100%;
     height: 266px;
