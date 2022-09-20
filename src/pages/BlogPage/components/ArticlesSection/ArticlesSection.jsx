@@ -10,6 +10,7 @@ const ArticlesSection = () => {
           img={article.img}
           date={article.date}
           title={article.title}
+          path={article.path}
           content={article.content}
         />
       ))}
