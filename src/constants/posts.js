@@ -9,18 +9,21 @@ const POSTS = [
     id: uid(),
     img: img2,
     title: TEXTS.blogPage.postsSection.posts.post1.title,
+    path: '/blog/1',
     date: TEXTS.blogPage.postsSection.posts.post1.date,
   },
   {
     id: uid(),
     img: img3,
     title: TEXTS.blogPage.postsSection.posts.post2.title,
+    path: '/blog/1',
     date: TEXTS.blogPage.postsSection.posts.post2.date,
   },
   {
     id: uid(),
     img: img4,
     title: TEXTS.blogPage.postsSection.posts.post3.title,
+    path: '/blog/1',
     date: TEXTS.blogPage.postsSection.posts.post3.date,
   },
 ];

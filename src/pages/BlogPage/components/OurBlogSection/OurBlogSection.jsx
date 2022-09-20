@@ -14,7 +14,7 @@ const OurBlogSection = () => {
         text={TEXTS.blogPage.ourBlogSection.content}
         btnTxt={TEXTS.blogPage.ourBlogSection.btnTxt}
         date={TEXTS.blogPage.ourBlogSection.date}
-        path={'/blog/single'}
+        path={'/blog/1'}
       />
     </StyledOurBlogSection>
   );

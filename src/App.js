@@ -29,7 +29,7 @@ function App() {
             <Route path='/services' element={<ServicesPage />} />
             <Route path='/services/service' element={<SingleServicePage />} />
             <Route path='/blog' element={<BlogPage />} />
-            <Route path='/blog/single' element={<BlogSinglePage />} />
+            <Route path='/blog/:id' element={<BlogSinglePage />} />
             <Route path='/contact' element={<ContactPage />} />
           </Routes>
         </Suspense>

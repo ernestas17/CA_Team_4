@@ -13,6 +13,7 @@ const ARTICLES = [
     img: img1,
     date: TEXTS.blogPage.articlesSection.article1.date,
     title: TEXTS.blogPage.articlesSection.article1.title,
+    path: '/blog/1',
     content: TEXTS.blogPage.articlesSection.article1.content,
   },
   {
@@ -20,6 +21,7 @@ const ARTICLES = [
     img: img2,
     date: TEXTS.blogPage.articlesSection.article2.date,
     title: TEXTS.blogPage.articlesSection.article2.title,
+    path: '/blog/1',
     content: TEXTS.blogPage.articlesSection.article2.content,
   },
   {
@@ -27,6 +29,7 @@ const ARTICLES = [
     img: img3,
     date: TEXTS.blogPage.articlesSection.article3.date,
     title: TEXTS.blogPage.articlesSection.article3.title,
+    path: '/blog/1',
     content: TEXTS.blogPage.articlesSection.article3.content,
   },
   {
@@ -34,6 +37,7 @@ const ARTICLES = [
     img: img4,
     date: TEXTS.blogPage.articlesSection.article4.date,
     title: TEXTS.blogPage.articlesSection.article4.title,
+    path: '/blog/1',
     content: TEXTS.blogPage.articlesSection.article4.content,
   },
   {
@@ -41,6 +45,7 @@ const ARTICLES = [
     img: img5,
     date: TEXTS.blogPage.articlesSection.article5.date,
     title: TEXTS.blogPage.articlesSection.article5.title,
+    path: '/blog/1',
     content: TEXTS.blogPage.articlesSection.article5.content,
   },
   {
@@ -48,6 +53,7 @@ const ARTICLES = [
     img: img6,
     date: TEXTS.blogPage.articlesSection.article6.date,
     title: TEXTS.blogPage.articlesSection.article6.title,
+    path: '/blog/1',
     content: TEXTS.blogPage.articlesSection.article6.content,
   },
 ];

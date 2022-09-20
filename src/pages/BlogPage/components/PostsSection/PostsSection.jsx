@@ -13,7 +13,7 @@ const PostsSection = () => {
         title={TEXTS.blogPage.postsSection.largePost.title}
         content={TEXTS.blogPage.postsSection.largePost.content}
         btnTxt={TEXTS.blogPage.postsSection.largePost.btnTxt}
-        path={'/blog/single'}
+        path={'/blog/1'}
       />
       <StyledPostsCont>
         {POSTS.map((post) => (
@@ -21,7 +21,7 @@ const PostsSection = () => {
             key={post.id}
             img={post.img}
             title={post.title}
-            path={'/blog/single'}
+            path={post.path}
             date={post.date}
           />
         ))}
