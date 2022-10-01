@@ -112,6 +112,39 @@ const TEXTS = {
         city: 'New york',
         text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
       },
+
+      card3: {
+        name: 'Ben Robinson',
+        city: 'Los Angeles',
+        text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
+      },
+
+      card4: {
+        name: 'Tom Anders',
+        city: 'Chicago',
+        text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
+      },
+
+      card5: {
+        name: 'Joshua West',
+        city: 'San Diego',
+        text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
+      },
+      card6: {
+        name: 'Ryan Hunt',
+        city: 'Boston',
+        text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
+      },
+      card7: {
+        name: 'Trent Guerra',
+        city: 'Huston',
+        text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
+      },
+      card8: {
+        name: 'Arthur Doyle',
+        city: 'Detroit',
+        text: 'I have got my car repaired at Finsweet many times before, they are good at what they do. Not only did they repair my car in a short comprehensive look on all the working',
+      },
     },
     faqSection: {
       heading: 'Frequently Asked Questions',
@@ -222,6 +255,127 @@ const TEXTS = {
     },
   },
 
+  blogPage: {
+    ourBlogSection: {
+      heading: 'Our Blog',
+      subtitle: 'TRENDING',
+      title: 'Diagnose Car Problems If You Don’t Know Much About Cars',
+      content:
+        'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+      btnTxt: 'Read more',
+      date: 'Posted on October 6th 2021',
+    },
+    postsSection: {
+      largePost: {
+        date: 'Posted on October 6th 2021',
+        title: 'Should I Buy a New Car or Lease a New Car in 2021?',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical.',
+        btnTxt: 'Read more',
+      },
+      posts: {
+        post1: {
+          title: 'Get an Awesome Number Plate for Your New Car',
+          date: 'Posted on October 6th 2021',
+        },
+        post2: {
+          title: 'Would you Let a Robot Drive your Car? Our AI Future',
+          date: 'Posted on October 6th 2021',
+        },
+        post3: {
+          title: 'Will Electric Technology Soon Rule The Road?',
+          date: 'Posted on October 6th 2021',
+        },
+      },
+    },
+
+    articlesSection: {
+      article1: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article2: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article3: {
+        date: 'Posted on October 6th 2021',
+        title: 'We provide blow straight past it with the wheels skidding',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article4: {
+        date: 'Posted on October 6th 2021',
+        title: 'We provide blow straight past it with the wheels skidding',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article5: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+      article6: {
+        date: 'Posted on October 6th 2021',
+        title: '5 Genius Car Accessories You Should Never Drive Without',
+        content:
+          'We provide a full range of front end mechanical repairs for all makes and models We provide a full range of front end mechanical repairs for all makes and models',
+      },
+    },
+  },
+
+  blogSinglePage: {
+    date: 'Posted on October 6th 2021',
+    title: 'Should I Buy a New Car or Lease a New Car in 2021?',
+    content:
+      'We provide a full range of front end mechanical repairs for all makes and models of cars, no matter the cause. This includes, We provide a full range of front end mechanical ',
+    article1: {
+      header: 'This is a blog post headline',
+      paragraph1:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui auctor dictum eget a elit. Pellentesque varius diam risus, ut condimentum lorem volutpat vel. Nam vel orci pharetra eros pulvinar cursus nec quis tellus. Quisque feugiat tortor lectus, pretium interdum justo tincidunt a. Donec at congue lectus. Nulla facilisi. Phasellus consectetur sapien accumsan lectus tincidunt placerat. Etiam ornare nibh vel dui egestas, eu posuere metus convallis.',
+      paragraph2:
+        'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante. Maecenas sodales tristique quam. Suspendisse fringilla massa vel dolor ornare rhoncus. Nullam ut orci mattis leo varius laoreet sed mollis dui. Aenean placerat nec enim ut finibus. Maecenas suscipit nibh eu neque egestas, non condimentum mi bibendum. Sed est eros, molestie consectetur auctor non, lobortis quis tortor. Nam cursus imperdiet massa volutpat hendrerit. Sed suscipit ligula iaculis lorem sagittis tincidunt. Etiam pellentesque metus vel enim iaculis aliquam. Mauris at nisi sed elit gravida malesuada.',
+    },
+    article2: {
+      header: 'This is a small blog post headline',
+      paragraph1:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim dolor et dui bibendum aliquam. Mauris a quam sit amet dui auctor dictum eget a elit. Pellentesque varius diam risus, ut condimentum lorem volutpat vel. Nam vel orci pharetra eros pulvinar cursus nec quis tellus. Quisque feugiat tortor lectus, pretium interdum justo tincidunt a. Donec at congue lectus. Nulla facilisi. Phasellus consectetur sapien accumsan lectus tincidunt placerat. Etiam ornare nibh vel dui egestas, eu posuere metus convallis.',
+      paragraph2:
+        'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante.',
+      paragraph3:
+        'Ut non urna a odio condimentum dictum. Proin egestas erat a orci ultrices, vitae bibendum libero posuere. Quisque laoreet tincidunt justo. Vestibulum congue dictum libero finibus vehicula. Aliquam nisi velit, ultricies eget enim vel, venenatis mollis ante. Maecenas sodales tristique quam. Suspendisse fringilla massa vel dolor ornare rhoncus. Nullam ut orci mattis leo varius laoreet sed mollis dui. Aenean placerat nec enim ut finibus. Maecenas suscipit nibh eu neque egestas, non condimentum mi bibendum. Sed est eros, molestie consectetur auctor non, lobortis quis tortor. Nam cursus imperdiet massa volutpat hendrerit. Sed suscipit ligula iaculis lorem sagittis tincidunt. Etiam pellentesque metus vel enim iaculis aliquam. Mauris at nisi sed elit gravida malesuada.',
+    },
+  },
+  contactPage: {
+    title: 'Get in touch with our experts',
+    placeholders: [
+      'Your full Name',
+      'Your Email',
+      'Select service type',
+      'Message',
+    ],
+    btnTxt: 'Send message',
+    contact: {
+      address: {
+        label: 'Address',
+        address: 'NH 234   Public Square San Francisco  65368',
+      },
+      details: {
+        label: 'Contact  Details',
+        contacts: `1800 265 24 52 
+        Finsweet@gmail.com`,
+      },
+      openingHours: {
+        label: 'Opening Hours',
+        hours: 'Monday to Friday 9:00 AM to  10:00  AM',
+      },
+    },
+  },
   servicesPage: {
     bookingSection: {
       title: 'Our services',

@@ -11,6 +11,7 @@ const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const SingleServicePage = lazy(() => import('./pages/SingleServicePage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogSinglePage = lazy(() => import('./pages/BlogSinglePage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 // Component imports
 const Header = lazy(() => import('./components/organisms/Header'));
@@ -28,6 +29,7 @@ function App() {
             <Route path='/services' element={<ServicesPage />} />
             <Route path='/services/service' element={<SingleServicePage />} />
             <Route path='/blog' element={<BlogPage />} />
+            <Route path='/blog/:id' element={<BlogSinglePage />} />
             <Route path='/contact' element={<ContactPage />} />
           </Routes>
         </Suspense>

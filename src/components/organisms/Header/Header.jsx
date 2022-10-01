@@ -35,7 +35,7 @@ const Header = () => {
   });
 
   useEffect(() => {
-    dimensions < 950 ? setDisplayNav(false) : setDisplayNav(true);
+    dimensions < 992 ? setDisplayNav(false) : setDisplayNav(true);
   }, [dimensions]);
 
   return (
@@ -44,13 +44,11 @@ const Header = () => {
         <Link to={'/'}>
           <LogoIcon />
         </Link>
-        {!displayNav && (
-          <NavIcon
-            onClick={() => {
-              setDisplayNav(!displayNav);
-            }}
-          />
-        )}
+        <NavIcon
+          onClick={() => {
+            setDisplayNav(!displayNav);
+          }}
+        />
       </StyledMobileWrapper>
       {displayNav && <Navigation navLinks={links} />}
       {displayNav &&
